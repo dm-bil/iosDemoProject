@@ -8,13 +8,38 @@
 
 /* Begin PBXBuildFile section */
 		FEFADC562A29EBA500B295DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEFADC552A29EBA500B295DF /* AppDelegate.swift */; };
-		FEFADC582A29EBA500B295DF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEFADC572A29EBA500B295DF /* SceneDelegate.swift */; };
 		FEFADC5F2A29EBA600B295DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FEFADC5E2A29EBA600B295DF /* Assets.xcassets */; };
 		FEFADC622A29EBA600B295DF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEFADC602A29EBA600B295DF /* LaunchScreen.storyboard */; };
 		FEFADC6D2A29EBA600B295DF /* iOSDemoProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEFADC6C2A29EBA600B295DF /* iOSDemoProjectTests.swift */; };
 		FEFADC772A29EBA600B295DF /* iOSDemoProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEFADC762A29EBA600B295DF /* iOSDemoProjectUITests.swift */; };
 		FEFADC792A29EBA600B295DF /* iOSDemoProjectUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEFADC782A29EBA600B295DF /* iOSDemoProjectUITestsLaunchTests.swift */; };
 		FEFADC8A2A2A051700B295DF /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEFADC892A2A051700B295DF /* main.swift */; };
+		FEFADC8E2A2A0A4A00B295DF /* ReduxCore in Frameworks */ = {isa = PBXBuildFile; productRef = FEFADC8D2A2A0A4A00B295DF /* ReduxCore */; };
+		FEFADC912A2A12E000B295DF /* BMCommand in Frameworks */ = {isa = PBXBuildFile; productRef = FEFADC902A2A12E000B295DF /* BMCommand */; };
+		FEFADC972A2A1E7000B295DF /* AuthState.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEFADC962A2A1E7000B295DF /* AuthState.swift */; };
+		FEFADC992A2A1F7900B295DF /* EmailAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEFADC982A2A1F7900B295DF /* EmailAccount.swift */; };
+		FEFADC9B2A2A1F8D00B295DF /* AuthTokenInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEFADC9A2A2A1F8D00B295DF /* AuthTokenInfo.swift */; };
+		FEFADC9D2A2A1FCB00B295DF /* EmailAuthError.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEFADC9C2A2A1FCB00B295DF /* EmailAuthError.swift */; };
+		FEFADC9F2A2A212B00B295DF /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEFADC9E2A2A212B00B295DF /* AppState.swift */; };
+		FEFADCA22A2A22AE00B295DF /* StoreLocator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEFADCA12A2A22AE00B295DF /* StoreLocator.swift */; };
+		FEFADCA52A2A3B1200B295DF /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEFADCA42A2A3B1200B295DF /* AppCoordinator.swift */; };
+		FEFADCA82A2A3B7A00B295DF /* ChainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEFADCA72A2A3B7A00B295DF /* ChainCoordinator.swift */; };
+		FEFADCAA2A2A3BE600B295DF /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEFADCA92A2A3BE600B295DF /* ContainerViewController.swift */; };
+		FEFADCB02A2F5B9500B295DF /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEFADCAD2A2F5B9500B295DF /* LoginPresenter.swift */; };
+		FEFADCB12A2F5B9500B295DF /* LoginScreenFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEFADCAE2A2F5B9500B295DF /* LoginScreenFactory.swift */; };
+		FEFADCB22A2F5B9500B295DF /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEFADCAF2A2F5B9500B295DF /* LoginViewController.swift */; };
+		FEFADCB52A2F5CB700B295DF /* BMPreview in Frameworks */ = {isa = PBXBuildFile; productRef = FEFADCB42A2F5CB700B295DF /* BMPreview */; };
+		FEFADCB82A2F612400B295DF /* SnapKit-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = FEFADCB72A2F612400B295DF /* SnapKit-Dynamic */; };
+		FEFADCBC2A2F651B00B295DF /* ColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEFADCBB2A2F651B00B295DF /* ColorExtensions.swift */; };
+		FEFADCBF2A2F8FF200B295DF /* AppLaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEFADCBE2A2F8FF200B295DF /* AppLaunchViewController.swift */; };
+		FEFADCC32A2F915500B295DF /* ApplicationActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEFADCC22A2F915500B295DF /* ApplicationActions.swift */; };
+		FEFADCC72A2F920A00B295DF /* NavigationMiddleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEFADCC62A2F920A00B295DF /* NavigationMiddleware.swift */; };
+		FEFADCCB2A2F926800B295DF /* NavigationMiddlewareActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEFADCCA2A2F926800B295DF /* NavigationMiddlewareActions.swift */; };
+		FEFADCCD2A2F944B00B295DF /* CoordinatorMiddleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEFADCCC2A2F944B00B295DF /* CoordinatorMiddleware.swift */; };
+		FEFADCD02A2F9BF300B295DF /* LoginPresenterActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEFADCCF2A2F9BF300B295DF /* LoginPresenterActions.swift */; };
+		FEFADCD32A2F9D4200B295DF /* CredentialsValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEFADCD22A2F9D4200B295DF /* CredentialsValidator.swift */; };
+		FEFADCD52A2F9D9400B295DF /* EmailAuthInputState.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEFADCD42A2F9D9400B295DF /* EmailAuthInputState.swift */; };
+		FEFADCD72A2F9E4900B295DF /* CustomOperators.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEFADCD62A2F9E4900B295DF /* CustomOperators.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +62,6 @@
 /* Begin PBXFileReference section */
 		FEFADC522A29EBA500B295DF /* iOSDemoProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSDemoProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEFADC552A29EBA500B295DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FEFADC572A29EBA500B295DF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		FEFADC5E2A29EBA600B295DF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FEFADC612A29EBA600B295DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FEFADC632A29EBA600B295DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -47,6 +71,28 @@
 		FEFADC762A29EBA600B295DF /* iOSDemoProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSDemoProjectUITests.swift; sourceTree = "<group>"; };
 		FEFADC782A29EBA600B295DF /* iOSDemoProjectUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSDemoProjectUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		FEFADC892A2A051700B295DF /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		FEFADC962A2A1E7000B295DF /* AuthState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthState.swift; sourceTree = "<group>"; };
+		FEFADC982A2A1F7900B295DF /* EmailAccount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmailAccount.swift; sourceTree = "<group>"; };
+		FEFADC9A2A2A1F8D00B295DF /* AuthTokenInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthTokenInfo.swift; sourceTree = "<group>"; };
+		FEFADC9C2A2A1FCB00B295DF /* EmailAuthError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmailAuthError.swift; sourceTree = "<group>"; };
+		FEFADC9E2A2A212B00B295DF /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		FEFADCA12A2A22AE00B295DF /* StoreLocator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreLocator.swift; sourceTree = "<group>"; };
+		FEFADCA42A2A3B1200B295DF /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		FEFADCA72A2A3B7A00B295DF /* ChainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChainCoordinator.swift; sourceTree = "<group>"; };
+		FEFADCA92A2A3BE600B295DF /* ContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
+		FEFADCAD2A2F5B9500B295DF /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
+		FEFADCAE2A2F5B9500B295DF /* LoginScreenFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreenFactory.swift; sourceTree = "<group>"; };
+		FEFADCAF2A2F5B9500B295DF /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		FEFADCBB2A2F651B00B295DF /* ColorExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorExtensions.swift; sourceTree = "<group>"; };
+		FEFADCBE2A2F8FF200B295DF /* AppLaunchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppLaunchViewController.swift; sourceTree = "<group>"; };
+		FEFADCC22A2F915500B295DF /* ApplicationActions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationActions.swift; sourceTree = "<group>"; };
+		FEFADCC62A2F920A00B295DF /* NavigationMiddleware.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationMiddleware.swift; sourceTree = "<group>"; };
+		FEFADCCA2A2F926800B295DF /* NavigationMiddlewareActions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationMiddlewareActions.swift; sourceTree = "<group>"; };
+		FEFADCCC2A2F944B00B295DF /* CoordinatorMiddleware.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoordinatorMiddleware.swift; sourceTree = "<group>"; };
+		FEFADCCF2A2F9BF300B295DF /* LoginPresenterActions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginPresenterActions.swift; sourceTree = "<group>"; };
+		FEFADCD22A2F9D4200B295DF /* CredentialsValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CredentialsValidator.swift; sourceTree = "<group>"; };
+		FEFADCD42A2F9D9400B295DF /* EmailAuthInputState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmailAuthInputState.swift; sourceTree = "<group>"; };
+		FEFADCD62A2F9E4900B295DF /* CustomOperators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomOperators.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +100,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FEFADC8E2A2A0A4A00B295DF /* ReduxCore in Frameworks */,
+				FEFADCB52A2F5CB700B295DF /* BMPreview in Frameworks */,
+				FEFADC912A2A12E000B295DF /* BMCommand in Frameworks */,
+				FEFADCB82A2F612400B295DF /* SnapKit-Dynamic in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,7 +199,6 @@
 		FEFADC882A2A041700B295DF /* Application */ = {
 			isa = PBXGroup;
 			children = (
-				FEFADC572A29EBA500B295DF /* SceneDelegate.swift */,
 				FEFADC552A29EBA500B295DF /* AppDelegate.swift */,
 				FEFADC892A2A051700B295DF /* main.swift */,
 			);
@@ -159,9 +208,191 @@
 		FEFADC8B2A2A06B300B295DF /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				FEFADC922A2A1C7600B295DF /* Core */,
+				FEFADCA02A2A229C00B295DF /* Abstractions */,
+				FEFADCD12A2F9D2E00B295DF /* Common */,
 				FEFADC882A2A041700B295DF /* Application */,
+				FEFADCA32A2A3A2300B295DF /* Navigation */,
+				FEFADCAB2A2F59A700B295DF /* Presentation */,
+				FEFADCC42A2F91EF00B295DF /* SideEffects */,
 			);
 			path = Sources;
+			sourceTree = "<group>";
+		};
+		FEFADC922A2A1C7600B295DF /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				FEFADCC02A2F913E00B295DF /* Actions */,
+				FEFADC942A2A1D3A00B295DF /* Models */,
+				FEFADC932A2A1C8F00B295DF /* State */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		FEFADC932A2A1C8F00B295DF /* State */ = {
+			isa = PBXGroup;
+			children = (
+				FEFADC952A2A1E5200B295DF /* Auth */,
+				FEFADC9E2A2A212B00B295DF /* AppState.swift */,
+			);
+			path = State;
+			sourceTree = "<group>";
+		};
+		FEFADC942A2A1D3A00B295DF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FEFADC9C2A2A1FCB00B295DF /* EmailAuthError.swift */,
+				FEFADC9A2A2A1F8D00B295DF /* AuthTokenInfo.swift */,
+				FEFADC982A2A1F7900B295DF /* EmailAccount.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FEFADC952A2A1E5200B295DF /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				FEFADC962A2A1E7000B295DF /* AuthState.swift */,
+				FEFADCD42A2F9D9400B295DF /* EmailAuthInputState.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		FEFADCA02A2A229C00B295DF /* Abstractions */ = {
+			isa = PBXGroup;
+			children = (
+				FEFADCA12A2A22AE00B295DF /* StoreLocator.swift */,
+			);
+			path = Abstractions;
+			sourceTree = "<group>";
+		};
+		FEFADCA32A2A3A2300B295DF /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				FEFADCA62A2A3B6B00B295DF /* Common */,
+				FEFADCA42A2A3B1200B295DF /* AppCoordinator.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		FEFADCA62A2A3B6B00B295DF /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				FEFADCA72A2A3B7A00B295DF /* ChainCoordinator.swift */,
+				FEFADCA92A2A3BE600B295DF /* ContainerViewController.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		FEFADCAB2A2F59A700B295DF /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				FEFADCB92A2F64EF00B295DF /* Common */,
+				FEFADCBD2A2F8FD800B295DF /* AppLaunch */,
+				FEFADCAC2A2F59BA00B295DF /* Login */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		FEFADCAC2A2F59BA00B295DF /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				FEFADCAD2A2F5B9500B295DF /* LoginPresenter.swift */,
+				FEFADCAE2A2F5B9500B295DF /* LoginScreenFactory.swift */,
+				FEFADCAF2A2F5B9500B295DF /* LoginViewController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		FEFADCB92A2F64EF00B295DF /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				FEFADCBA2A2F650E00B295DF /* Extensions */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		FEFADCBA2A2F650E00B295DF /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				FEFADCBB2A2F651B00B295DF /* ColorExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		FEFADCBD2A2F8FD800B295DF /* AppLaunch */ = {
+			isa = PBXGroup;
+			children = (
+				FEFADCBE2A2F8FF200B295DF /* AppLaunchViewController.swift */,
+			);
+			path = AppLaunch;
+			sourceTree = "<group>";
+		};
+		FEFADCC02A2F913E00B295DF /* Actions */ = {
+			isa = PBXGroup;
+			children = (
+				FEFADCCE2A2F9BE500B295DF /* Login */,
+				FEFADCC82A2F925800B295DF /* SideEffects */,
+				FEFADCC12A2F914C00B295DF /* Application */,
+			);
+			path = Actions;
+			sourceTree = "<group>";
+		};
+		FEFADCC12A2F914C00B295DF /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				FEFADCC22A2F915500B295DF /* ApplicationActions.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		FEFADCC42A2F91EF00B295DF /* SideEffects */ = {
+			isa = PBXGroup;
+			children = (
+				FEFADCC52A2F91FE00B295DF /* Middleware */,
+			);
+			path = SideEffects;
+			sourceTree = "<group>";
+		};
+		FEFADCC52A2F91FE00B295DF /* Middleware */ = {
+			isa = PBXGroup;
+			children = (
+				FEFADCCC2A2F944B00B295DF /* CoordinatorMiddleware.swift */,
+				FEFADCC62A2F920A00B295DF /* NavigationMiddleware.swift */,
+			);
+			path = Middleware;
+			sourceTree = "<group>";
+		};
+		FEFADCC82A2F925800B295DF /* SideEffects */ = {
+			isa = PBXGroup;
+			children = (
+				FEFADCC92A2F926000B295DF /* Middleware */,
+			);
+			path = SideEffects;
+			sourceTree = "<group>";
+		};
+		FEFADCC92A2F926000B295DF /* Middleware */ = {
+			isa = PBXGroup;
+			children = (
+				FEFADCCA2A2F926800B295DF /* NavigationMiddlewareActions.swift */,
+			);
+			path = Middleware;
+			sourceTree = "<group>";
+		};
+		FEFADCCE2A2F9BE500B295DF /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				FEFADCCF2A2F9BF300B295DF /* LoginPresenterActions.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		FEFADCD12A2F9D2E00B295DF /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				FEFADCD62A2F9E4900B295DF /* CustomOperators.swift */,
+				FEFADCD22A2F9D4200B295DF /* CredentialsValidator.swift */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -180,6 +411,12 @@
 			dependencies = (
 			);
 			name = iOSDemoProject;
+			packageProductDependencies = (
+				FEFADC8D2A2A0A4A00B295DF /* ReduxCore */,
+				FEFADC902A2A12E000B295DF /* BMCommand */,
+				FEFADCB42A2F5CB700B295DF /* BMPreview */,
+				FEFADCB72A2F612400B295DF /* SnapKit-Dynamic */,
+			);
 			productName = iOSDemoProject;
 			productReference = FEFADC522A29EBA500B295DF /* iOSDemoProject.app */;
 			productType = "com.apple.product-type.application";
@@ -229,6 +466,7 @@
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1430;
 				LastUpgradeCheck = 1430;
+				ORGANIZATIONNAME = BetterMe;
 				TargetAttributes = {
 					FEFADC512A29EBA500B295DF = {
 						CreatedOnToolsVersion = 14.3;
@@ -252,6 +490,12 @@
 				Base,
 			);
 			mainGroup = FEFADC492A29EBA500B295DF;
+			packageReferences = (
+				FEFADC8C2A2A0A4A00B295DF /* XCRemoteSwiftPackageReference "ReduxCore" */,
+				FEFADC8F2A2A12E000B295DF /* XCRemoteSwiftPackageReference "ios-command" */,
+				FEFADCB32A2F5CB700B295DF /* XCRemoteSwiftPackageReference "BMPreview" */,
+				FEFADCB62A2F612400B295DF /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = FEFADC532A29EBA500B295DF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -294,9 +538,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FEFADCCD2A2F944B00B295DF /* CoordinatorMiddleware.swift in Sources */,
+				FEFADCC32A2F915500B295DF /* ApplicationActions.swift in Sources */,
+				FEFADCD32A2F9D4200B295DF /* CredentialsValidator.swift in Sources */,
+				FEFADCA82A2A3B7A00B295DF /* ChainCoordinator.swift in Sources */,
 				FEFADC562A29EBA500B295DF /* AppDelegate.swift in Sources */,
+				FEFADCA22A2A22AE00B295DF /* StoreLocator.swift in Sources */,
+				FEFADCB22A2F5B9500B295DF /* LoginViewController.swift in Sources */,
+				FEFADCA52A2A3B1200B295DF /* AppCoordinator.swift in Sources */,
+				FEFADC972A2A1E7000B295DF /* AuthState.swift in Sources */,
+				FEFADC9D2A2A1FCB00B295DF /* EmailAuthError.swift in Sources */,
+				FEFADCB12A2F5B9500B295DF /* LoginScreenFactory.swift in Sources */,
+				FEFADC9F2A2A212B00B295DF /* AppState.swift in Sources */,
 				FEFADC8A2A2A051700B295DF /* main.swift in Sources */,
-				FEFADC582A29EBA500B295DF /* SceneDelegate.swift in Sources */,
+				FEFADCB02A2F5B9500B295DF /* LoginPresenter.swift in Sources */,
+				FEFADCD02A2F9BF300B295DF /* LoginPresenterActions.swift in Sources */,
+				FEFADCD72A2F9E4900B295DF /* CustomOperators.swift in Sources */,
+				FEFADCD52A2F9D9400B295DF /* EmailAuthInputState.swift in Sources */,
+				FEFADC992A2A1F7900B295DF /* EmailAccount.swift in Sources */,
+				FEFADCAA2A2A3BE600B295DF /* ContainerViewController.swift in Sources */,
+				FEFADCC72A2F920A00B295DF /* NavigationMiddleware.swift in Sources */,
+				FEFADC9B2A2A1F8D00B295DF /* AuthTokenInfo.swift in Sources */,
+				FEFADCCB2A2F926800B295DF /* NavigationMiddlewareActions.swift in Sources */,
+				FEFADCBC2A2F651B00B295DF /* ColorExtensions.swift in Sources */,
+				FEFADCBF2A2F8FF200B295DF /* AppLaunchViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -642,6 +907,64 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FEFADC8C2A2A0A4A00B295DF /* XCRemoteSwiftPackageReference "ReduxCore" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "git@github.com:betterme-dev/ReduxCore.git";
+			requirement = {
+				kind = exactVersion;
+				version = 2.0.0;
+			};
+		};
+		FEFADC8F2A2A12E000B295DF /* XCRemoteSwiftPackageReference "ios-command" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "git@github.com:betterme-dev/ios-command.git";
+			requirement = {
+				kind = exactVersion;
+				version = 1.0.1;
+			};
+		};
+		FEFADCB32A2F5CB700B295DF /* XCRemoteSwiftPackageReference "BMPreview" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "git@github.com:betterme-dev/BMPreview.git";
+			requirement = {
+				kind = exactVersion;
+				version = 1.0.2;
+			};
+		};
+		FEFADCB62A2F612400B295DF /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "git@github.com:SnapKit/SnapKit.git";
+			requirement = {
+				kind = exactVersion;
+				version = 5.6.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FEFADC8D2A2A0A4A00B295DF /* ReduxCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FEFADC8C2A2A0A4A00B295DF /* XCRemoteSwiftPackageReference "ReduxCore" */;
+			productName = ReduxCore;
+		};
+		FEFADC902A2A12E000B295DF /* BMCommand */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FEFADC8F2A2A12E000B295DF /* XCRemoteSwiftPackageReference "ios-command" */;
+			productName = BMCommand;
+		};
+		FEFADCB42A2F5CB700B295DF /* BMPreview */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FEFADCB32A2F5CB700B295DF /* XCRemoteSwiftPackageReference "BMPreview" */;
+			productName = BMPreview;
+		};
+		FEFADCB72A2F612400B295DF /* SnapKit-Dynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FEFADCB62A2F612400B295DF /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = "SnapKit-Dynamic";
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = FEFADC4A2A29EBA500B295DF /* Project object */;
 }

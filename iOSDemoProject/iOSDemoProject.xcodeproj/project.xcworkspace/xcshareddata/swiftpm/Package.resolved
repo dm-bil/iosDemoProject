@@ -1,0 +1,41 @@
+{
+  "pins" : [
+    {
+      "identity" : "bmpreview",
+      "kind" : "remoteSourceControl",
+      "location" : "git@github.com:betterme-dev/BMPreview.git",
+      "state" : {
+        "revision" : "ff46987be4ea4ee9bb6f0ff3c5ab61fa56b00c6a",
+        "version" : "1.0.2"
+      }
+    },
+    {
+      "identity" : "ios-command",
+      "kind" : "remoteSourceControl",
+      "location" : "git@github.com:betterme-dev/ios-command.git",
+      "state" : {
+        "revision" : "07ce0bd35adc6e392511bef122fe23781ec093a9",
+        "version" : "1.0.1"
+      }
+    },
+    {
+      "identity" : "reduxcore",
+      "kind" : "remoteSourceControl",
+      "location" : "git@github.com:betterme-dev/ReduxCore.git",
+      "state" : {
+        "revision" : "2fa11ca7e36c53a0d4e8b4f9153dc7f0df66a449",
+        "version" : "2.0.0"
+      }
+    },
+    {
+      "identity" : "snapkit",
+      "kind" : "remoteSourceControl",
+      "location" : "git@github.com:SnapKit/SnapKit.git",
+      "state" : {
+        "revision" : "f222cbdf325885926566172f6f5f06af95473158",
+        "version" : "5.6.0"
+      }
+    }
+  ],
+  "version" : 2
+}
