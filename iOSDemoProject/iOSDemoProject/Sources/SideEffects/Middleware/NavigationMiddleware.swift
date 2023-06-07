@@ -17,10 +17,13 @@ final class NavigationMiddleware {
             case is Actions.Application.DidFinishLaunch:
                 switch newState.auth {
                 case .idle:
-                    dispatch(Actions.NavigationMiddlewareActions.ShowLogin())
+                    dispatch(Actions.NavigationMiddleware.ShowLogin())
                 case .email:
-                    dispatch(Actions.NavigationMiddlewareActions.ShowMain())
+                    dispatch(Actions.NavigationMiddleware.ShowMain())
                 }
+                
+            case is Actions.EmailSignInPresenter.Succeeded:
+                dispatch(Actions.NavigationMiddleware.ShowMain())
                 
             default:
                 break

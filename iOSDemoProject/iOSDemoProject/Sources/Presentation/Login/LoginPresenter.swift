@@ -26,13 +26,13 @@ struct LoginPresenter {
                 onPasswordChanged: CommandWith(id: "onPasswordChanged") { password in
                     dispatch.perform(with: Actions.LoginPresenter.PasswordDidChange(password: password))
                 },
-                continueButton: continueButtonState(with: state.emailAuthInput),
+                signInButton: signInButtonState(with: state.emailAuthInput),
                 onDestroy: endObserving
             )
         )
     }
     
-    private func continueButtonState(with state: EmailAuthInputState?) -> LoginViewController.Props.ContinueButtonState {
+    private func signInButtonState(with state: EmailAuthInputState?) -> LoginViewController.Props.SignInButtonState {
         guard let email = state?.email, let password = state?.password else { return .disabled }
         
         if CredentialsValidator.isValid(email: email), CredentialsValidator.isValid(password: password) {

@@ -17,6 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         defer {
             StoreLocator.shared.dispatch(action: Actions.Application.DidFinishLaunch(launchOptions: launchOptions?.description))
         }
+        RequestManagerLocator.populate(with: RequestManagerFactory.default())
         configureWindow()
         configureStore()
         return true
@@ -27,6 +28,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             state: AppState.initial,
             reducer: reduce,
             middlewares: [
+                SideEffectsMiddleware().middleware(),
                 CoordinatorMiddleware(handler: coordinator.handle).middleware(),
                 NavigationMiddleware().middleware(),
             ]

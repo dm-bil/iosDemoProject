@@ -32,6 +32,26 @@ enum AuthState: Equatable {
 
 func reduce(_ state: AuthState, with action: Action) -> AuthState {
     switch action {
+    case let action as Actions.LoginPresenter.SignIn:
+        return .email(
+            .signingIn(
+                AuthState.EmailCredentials(
+                    email: action.email,
+                    password: action.password
+                )
+            )
+        )
+        
+    case let action as Actions.EmailSignInPresenter.Succeeded:
+        return .email(
+            .authorized(
+                AuthState.EmailAuthorized(
+                    account: action.emailAccount,
+                    remoteData: action.authTokenInfo
+                )
+            )
+        )
+        
     default:
         return state
     }

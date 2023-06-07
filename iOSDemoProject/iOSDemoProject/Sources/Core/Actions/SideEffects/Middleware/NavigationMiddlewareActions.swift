@@ -9,7 +9,7 @@ import ReduxCore
 import Foundation
 
 public extension Actions {
-    enum NavigationMiddlewareActions {
+    enum NavigationMiddleware {
         public struct ShowLogin: Action {
             public init() {}
         }

@@ -18,10 +18,10 @@ final class LoginViewController: UIViewController {
     struct Props: Equatable {
         let onEmailChanged: CommandWith<String>
         let onPasswordChanged: CommandWith<String>
-        let continueButton: ContinueButtonState
+        let signInButton: SignInButtonState
         let onDestroy: Command
         
-        enum ContinueButtonState: Equatable {
+        enum SignInButtonState: Equatable {
             case enabled(Command)
             case disabled
         }
@@ -29,7 +29,7 @@ final class LoginViewController: UIViewController {
         static let initial = Props(
             onEmailChanged: .nop,
             onPasswordChanged: .nop,
-            continueButton: .disabled,
+            signInButton: .disabled,
             onDestroy: .nop
         )
     }
@@ -76,6 +76,14 @@ final class LoginViewController: UIViewController {
     override func viewWillLayoutSubviews() {
         super.viewWillLayoutSubviews()
         
+        switch props.signInButton {
+        case .enabled:
+            signInButton.isUserInteractionEnabled = true
+            signInButton.backgroundColor = UIColor(hexString: "#007AFF")
+        case .disabled:
+            signInButton.isUserInteractionEnabled = false
+            signInButton.backgroundColor = UIColor(hexString: "#979592")
+        }
     }
 
     func addWillAppearObserver(_ block: @escaping () -> Void) {
@@ -137,12 +145,14 @@ private extension LoginViewController {
         passwordTextField.autocapitalizationType = .none
         passwordTextField.isSecureTextEntry = true
         passwordTextField.placeholder = "Password"
+        passwordTextField.addTarget(self, action: #selector(passwordDidChangeAction), for: .editingChanged)
         
         signInButton.setTitle("Sign in", for: .normal)
         signInButton.titleLabel?.font = UIFont.systemFont(ofSize: 17, weight: .semibold)
         signInButton.backgroundColor = UIColor(hexString: "#007AFF")
         signInButton.tintColor = .white
         signInButton.layer.cornerRadius = 10
+        signInButton.addTarget(self, action: #selector(onSigninTap), for: .touchUpInside)
     }
     
     func configureLayout() {
@@ -207,6 +217,15 @@ private extension LoginViewController {
     @objc func passwordDidChangeAction(_ sender: UITextField) {
         props.onPasswordChanged.perform(with: sender.text ?? "")
     }
+    
+    @objc func onSigninTap() {
+        switch props.signInButton {
+        case .enabled(let onTap):
+            onTap.perform()
+        case .disabled:
+            break
+        }
+    }
 }
 
 #if DEBUG
@@ -220,7 +239,7 @@ struct LoginViewController_Preview: PreviewProvider {
                         props: LoginViewController.Props(
                             onEmailChanged: .nop,
                             onPasswordChanged: .nop,
-                            continueButton: .disabled,
+                            signInButton: .disabled,
                             onDestroy: .nop
                         )
                     )

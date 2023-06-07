@@ -37,13 +37,41 @@ final class AppCoordinator: ChainCoordinator {
         }
         
         switch action {
-        case is Actions.NavigationMiddlewareActions.ShowLogin:
+        case is Actions.NavigationMiddleware.ShowLogin:
             let vc = LoginScreenFactory().default()
             containerController.displayContentController(vc)
+            return true
+            
+        case is Actions.NavigationMiddleware.ShowMain:
+            let mainCoordinator = MainCoordinator()
+            next = mainCoordinator
+            containerController.displayContentController(mainCoordinator.rootViewController)
+            return true
+            
+        case is Actions.LoginPresenter.SignIn:
+            showLoader()
+            return true
+            
+        case is Actions.EmailSignInPresenter.Succeeded,
+             is Actions.EmailSignInPresenter.Failed:
+            hideLoader()
             return true
             
         default:
             return false
         }
+    }
+}
+
+private extension AppCoordinator {
+    func showLoader() {
+        let viewController = LoaderViewController()
+        viewController.modalTransitionStyle = .crossDissolve
+        viewController.modalPresentationStyle = .overCurrentContext
+        containerController.present(viewController, animated: true)
+    }
+    
+    func hideLoader() {
+        containerController.dismiss(animated: false)
     }
 }

@@ -7,6 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FEF3517F2A309F4C00BD8320 /* EmailSignInController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF3517C2A309F4B00BD8320 /* EmailSignInController.swift */; };
+		FEF351802A309F4C00BD8320 /* EmailSignInFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF3517D2A309F4B00BD8320 /* EmailSignInFactory.swift */; };
+		FEF351812A309F4C00BD8320 /* EmailSignInPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF3517E2A309F4B00BD8320 /* EmailSignInPresenter.swift */; };
+		FEF351842A30A1B000BD8320 /* RequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF351832A30A1B000BD8320 /* RequestManager.swift */; };
+		FEF351862A30A63300BD8320 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF351852A30A63300BD8320 /* Request.swift */; };
+		FEF351892A30A6F400BD8320 /* EmailSignInResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF351882A30A6F400BD8320 /* EmailSignInResponse.swift */; };
+		FEF3518B2A30A74B00BD8320 /* AuthTokenInfoResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF3518A2A30A74B00BD8320 /* AuthTokenInfoResponse.swift */; };
+		FEF3518D2A30A76000BD8320 /* EmailAccountResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF3518C2A30A76000BD8320 /* EmailAccountResponse.swift */; };
+		FEF3518F2A30A90000BD8320 /* UserPropertiesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF3518E2A30A90000BD8320 /* UserPropertiesResponse.swift */; };
+		FEF351922A30AAD600BD8320 /* RequestManagerImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF351912A30AAD600BD8320 /* RequestManagerImpl.swift */; };
+		FEF351952A30B46100BD8320 /* EmailSignInPresenterActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF351942A30B46100BD8320 /* EmailSignInPresenterActions.swift */; };
+		FEF351972A30B79600BD8320 /* UserProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF351962A30B79600BD8320 /* UserProperties.swift */; };
+		FEF351992A30BDEA00BD8320 /* SideEffectsMiddleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF351982A30BDEA00BD8320 /* SideEffectsMiddleware.swift */; };
+		FEF3519B2A30CCD800BD8320 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF3519A2A30CCD800BD8320 /* MainCoordinator.swift */; };
+		FEF3519E2A30D2EF00BD8320 /* LoaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF3519D2A30D2EF00BD8320 /* LoaderViewController.swift */; };
+		FEF351A02A30DC7F00BD8320 /* ProfileCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF3519F2A30DC7F00BD8320 /* ProfileCoordinator.swift */; };
+		FEF351A52A30DD6700BD8320 /* ProfilePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF351A22A30DD6700BD8320 /* ProfilePresenter.swift */; };
+		FEF351A62A30DD6700BD8320 /* ProfileScreenFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF351A32A30DD6700BD8320 /* ProfileScreenFactory.swift */; };
+		FEF351A72A30DD6700BD8320 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF351A42A30DD6700BD8320 /* ProfileViewController.swift */; };
+		FEF351A92A30E25C00BD8320 /* ListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF351A82A30E25C00BD8320 /* ListCoordinator.swift */; };
+		FEF351AE2A30E2C800BD8320 /* ListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF351AB2A30E2C800BD8320 /* ListPresenter.swift */; };
+		FEF351AF2A30E2C800BD8320 /* ListScreenFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF351AC2A30E2C800BD8320 /* ListScreenFactory.swift */; };
+		FEF351B02A30E2C800BD8320 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF351AD2A30E2C800BD8320 /* ListViewController.swift */; };
 		FEFADC562A29EBA500B295DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEFADC552A29EBA500B295DF /* AppDelegate.swift */; };
 		FEFADC5F2A29EBA600B295DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FEFADC5E2A29EBA600B295DF /* Assets.xcassets */; };
 		FEFADC622A29EBA600B295DF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEFADC602A29EBA600B295DF /* LaunchScreen.storyboard */; };
@@ -60,6 +83,29 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FEF3517C2A309F4B00BD8320 /* EmailSignInController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmailSignInController.swift; sourceTree = "<group>"; };
+		FEF3517D2A309F4B00BD8320 /* EmailSignInFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmailSignInFactory.swift; sourceTree = "<group>"; };
+		FEF3517E2A309F4B00BD8320 /* EmailSignInPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmailSignInPresenter.swift; sourceTree = "<group>"; };
+		FEF351832A30A1B000BD8320 /* RequestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestManager.swift; sourceTree = "<group>"; };
+		FEF351852A30A63300BD8320 /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		FEF351882A30A6F400BD8320 /* EmailSignInResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmailSignInResponse.swift; sourceTree = "<group>"; };
+		FEF3518A2A30A74B00BD8320 /* AuthTokenInfoResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthTokenInfoResponse.swift; sourceTree = "<group>"; };
+		FEF3518C2A30A76000BD8320 /* EmailAccountResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmailAccountResponse.swift; sourceTree = "<group>"; };
+		FEF3518E2A30A90000BD8320 /* UserPropertiesResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPropertiesResponse.swift; sourceTree = "<group>"; };
+		FEF351912A30AAD600BD8320 /* RequestManagerImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestManagerImpl.swift; sourceTree = "<group>"; };
+		FEF351942A30B46100BD8320 /* EmailSignInPresenterActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailSignInPresenterActions.swift; sourceTree = "<group>"; };
+		FEF351962A30B79600BD8320 /* UserProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProperties.swift; sourceTree = "<group>"; };
+		FEF351982A30BDEA00BD8320 /* SideEffectsMiddleware.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideEffectsMiddleware.swift; sourceTree = "<group>"; };
+		FEF3519A2A30CCD800BD8320 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		FEF3519D2A30D2EF00BD8320 /* LoaderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoaderViewController.swift; sourceTree = "<group>"; };
+		FEF3519F2A30DC7F00BD8320 /* ProfileCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCoordinator.swift; sourceTree = "<group>"; };
+		FEF351A22A30DD6700BD8320 /* ProfilePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePresenter.swift; sourceTree = "<group>"; };
+		FEF351A32A30DD6700BD8320 /* ProfileScreenFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileScreenFactory.swift; sourceTree = "<group>"; };
+		FEF351A42A30DD6700BD8320 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		FEF351A82A30E25C00BD8320 /* ListCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCoordinator.swift; sourceTree = "<group>"; };
+		FEF351AB2A30E2C800BD8320 /* ListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListPresenter.swift; sourceTree = "<group>"; };
+		FEF351AC2A30E2C800BD8320 /* ListScreenFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListScreenFactory.swift; sourceTree = "<group>"; };
+		FEF351AD2A30E2C800BD8320 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		FEFADC522A29EBA500B295DF /* iOSDemoProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSDemoProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEFADC552A29EBA500B295DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FEFADC5E2A29EBA600B295DF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -124,6 +170,90 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FEF3517A2A309EFE00BD8320 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FEF3517B2A309F3300BD8320 /* SignIn */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		FEF3517B2A309F3300BD8320 /* SignIn */ = {
+			isa = PBXGroup;
+			children = (
+				FEF3517C2A309F4B00BD8320 /* EmailSignInController.swift */,
+				FEF3517D2A309F4B00BD8320 /* EmailSignInFactory.swift */,
+				FEF3517E2A309F4B00BD8320 /* EmailSignInPresenter.swift */,
+			);
+			path = SignIn;
+			sourceTree = "<group>";
+		};
+		FEF351822A30A19C00BD8320 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				FEF351872A30A6D400BD8320 /* Response */,
+				FEF351832A30A1B000BD8320 /* RequestManager.swift */,
+				FEF351912A30AAD600BD8320 /* RequestManagerImpl.swift */,
+				FEF351852A30A63300BD8320 /* Request.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		FEF351872A30A6D400BD8320 /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				FEF351902A30A93500BD8320 /* Models */,
+				FEF351882A30A6F400BD8320 /* EmailSignInResponse.swift */,
+			);
+			path = Response;
+			sourceTree = "<group>";
+		};
+		FEF351902A30A93500BD8320 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FEF3518C2A30A76000BD8320 /* EmailAccountResponse.swift */,
+				FEF3518A2A30A74B00BD8320 /* AuthTokenInfoResponse.swift */,
+				FEF3518E2A30A90000BD8320 /* UserPropertiesResponse.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FEF351932A30B45700BD8320 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FEF351942A30B46100BD8320 /* EmailSignInPresenterActions.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		FEF3519C2A30D2D100BD8320 /* Loader */ = {
+			isa = PBXGroup;
+			children = (
+				FEF3519D2A30D2EF00BD8320 /* LoaderViewController.swift */,
+			);
+			path = Loader;
+			sourceTree = "<group>";
+		};
+		FEF351A12A30DD3C00BD8320 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				FEF351A22A30DD6700BD8320 /* ProfilePresenter.swift */,
+				FEF351A32A30DD6700BD8320 /* ProfileScreenFactory.swift */,
+				FEF351A42A30DD6700BD8320 /* ProfileViewController.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		FEF351AA2A30E2B500BD8320 /* List */ = {
+			isa = PBXGroup;
+			children = (
+				FEF351AB2A30E2C800BD8320 /* ListPresenter.swift */,
+				FEF351AC2A30E2C800BD8320 /* ListScreenFactory.swift */,
+				FEF351AD2A30E2C800BD8320 /* ListViewController.swift */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
 		FEFADC492A29EBA500B295DF = {
 			isa = PBXGroup;
 			children = (
@@ -208,6 +338,7 @@
 		FEFADC8B2A2A06B300B295DF /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				FEF351822A30A19C00BD8320 /* Network */,
 				FEFADC922A2A1C7600B295DF /* Core */,
 				FEFADCA02A2A229C00B295DF /* Abstractions */,
 				FEFADCD12A2F9D2E00B295DF /* Common */,
@@ -244,6 +375,7 @@
 				FEFADC9C2A2A1FCB00B295DF /* EmailAuthError.swift */,
 				FEFADC9A2A2A1F8D00B295DF /* AuthTokenInfo.swift */,
 				FEFADC982A2A1F7900B295DF /* EmailAccount.swift */,
+				FEF351962A30B79600BD8320 /* UserProperties.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -270,6 +402,9 @@
 			children = (
 				FEFADCA62A2A3B6B00B295DF /* Common */,
 				FEFADCA42A2A3B1200B295DF /* AppCoordinator.swift */,
+				FEF3519A2A30CCD800BD8320 /* MainCoordinator.swift */,
+				FEF3519F2A30DC7F00BD8320 /* ProfileCoordinator.swift */,
+				FEF351A82A30E25C00BD8320 /* ListCoordinator.swift */,
 			);
 			path = Navigation;
 			sourceTree = "<group>";
@@ -289,6 +424,8 @@
 				FEFADCB92A2F64EF00B295DF /* Common */,
 				FEFADCBD2A2F8FD800B295DF /* AppLaunch */,
 				FEFADCAC2A2F59BA00B295DF /* Login */,
+				FEF351A12A30DD3C00BD8320 /* Profile */,
+				FEF351AA2A30E2B500BD8320 /* List */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -306,6 +443,7 @@
 		FEFADCB92A2F64EF00B295DF /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				FEF3519C2A30D2D100BD8320 /* Loader */,
 				FEFADCBA2A2F650E00B295DF /* Extensions */,
 			);
 			path = Common;
@@ -348,6 +486,7 @@
 		FEFADCC42A2F91EF00B295DF /* SideEffects */ = {
 			isa = PBXGroup;
 			children = (
+				FEF3517A2A309EFE00BD8320 /* Controllers */,
 				FEFADCC52A2F91FE00B295DF /* Middleware */,
 			);
 			path = SideEffects;
@@ -358,6 +497,7 @@
 			children = (
 				FEFADCCC2A2F944B00B295DF /* CoordinatorMiddleware.swift */,
 				FEFADCC62A2F920A00B295DF /* NavigationMiddleware.swift */,
+				FEF351982A30BDEA00BD8320 /* SideEffectsMiddleware.swift */,
 			);
 			path = Middleware;
 			sourceTree = "<group>";
@@ -365,6 +505,7 @@
 		FEFADCC82A2F925800B295DF /* SideEffects */ = {
 			isa = PBXGroup;
 			children = (
+				FEF351932A30B45700BD8320 /* Controllers */,
 				FEFADCC92A2F926000B295DF /* Middleware */,
 			);
 			path = SideEffects;
@@ -538,30 +679,53 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FEF351A62A30DD6700BD8320 /* ProfileScreenFactory.swift in Sources */,
 				FEFADCCD2A2F944B00B295DF /* CoordinatorMiddleware.swift in Sources */,
+				FEF351952A30B46100BD8320 /* EmailSignInPresenterActions.swift in Sources */,
 				FEFADCC32A2F915500B295DF /* ApplicationActions.swift in Sources */,
 				FEFADCD32A2F9D4200B295DF /* CredentialsValidator.swift in Sources */,
 				FEFADCA82A2A3B7A00B295DF /* ChainCoordinator.swift in Sources */,
+				FEF3517F2A309F4C00BD8320 /* EmailSignInController.swift in Sources */,
 				FEFADC562A29EBA500B295DF /* AppDelegate.swift in Sources */,
+				FEF3518B2A30A74B00BD8320 /* AuthTokenInfoResponse.swift in Sources */,
+				FEF351A02A30DC7F00BD8320 /* ProfileCoordinator.swift in Sources */,
+				FEF351AE2A30E2C800BD8320 /* ListPresenter.swift in Sources */,
+				FEF351B02A30E2C800BD8320 /* ListViewController.swift in Sources */,
+				FEF351862A30A63300BD8320 /* Request.swift in Sources */,
 				FEFADCA22A2A22AE00B295DF /* StoreLocator.swift in Sources */,
+				FEF351922A30AAD600BD8320 /* RequestManagerImpl.swift in Sources */,
 				FEFADCB22A2F5B9500B295DF /* LoginViewController.swift in Sources */,
+				FEF3518F2A30A90000BD8320 /* UserPropertiesResponse.swift in Sources */,
+				FEF351A52A30DD6700BD8320 /* ProfilePresenter.swift in Sources */,
 				FEFADCA52A2A3B1200B295DF /* AppCoordinator.swift in Sources */,
 				FEFADC972A2A1E7000B295DF /* AuthState.swift in Sources */,
 				FEFADC9D2A2A1FCB00B295DF /* EmailAuthError.swift in Sources */,
+				FEF351992A30BDEA00BD8320 /* SideEffectsMiddleware.swift in Sources */,
+				FEF351842A30A1B000BD8320 /* RequestManager.swift in Sources */,
+				FEF351AF2A30E2C800BD8320 /* ListScreenFactory.swift in Sources */,
 				FEFADCB12A2F5B9500B295DF /* LoginScreenFactory.swift in Sources */,
 				FEFADC9F2A2A212B00B295DF /* AppState.swift in Sources */,
 				FEFADC8A2A2A051700B295DF /* main.swift in Sources */,
 				FEFADCB02A2F5B9500B295DF /* LoginPresenter.swift in Sources */,
 				FEFADCD02A2F9BF300B295DF /* LoginPresenterActions.swift in Sources */,
+				FEF351802A309F4C00BD8320 /* EmailSignInFactory.swift in Sources */,
+				FEF351972A30B79600BD8320 /* UserProperties.swift in Sources */,
 				FEFADCD72A2F9E4900B295DF /* CustomOperators.swift in Sources */,
 				FEFADCD52A2F9D9400B295DF /* EmailAuthInputState.swift in Sources */,
 				FEFADC992A2A1F7900B295DF /* EmailAccount.swift in Sources */,
 				FEFADCAA2A2A3BE600B295DF /* ContainerViewController.swift in Sources */,
 				FEFADCC72A2F920A00B295DF /* NavigationMiddleware.swift in Sources */,
+				FEF3518D2A30A76000BD8320 /* EmailAccountResponse.swift in Sources */,
+				FEF3519E2A30D2EF00BD8320 /* LoaderViewController.swift in Sources */,
 				FEFADC9B2A2A1F8D00B295DF /* AuthTokenInfo.swift in Sources */,
 				FEFADCCB2A2F926800B295DF /* NavigationMiddlewareActions.swift in Sources */,
+				FEF3519B2A30CCD800BD8320 /* MainCoordinator.swift in Sources */,
 				FEFADCBC2A2F651B00B295DF /* ColorExtensions.swift in Sources */,
 				FEFADCBF2A2F8FF200B295DF /* AppLaunchViewController.swift in Sources */,
+				FEF351A92A30E25C00BD8320 /* ListCoordinator.swift in Sources */,
+				FEF351A72A30DD6700BD8320 /* ProfileViewController.swift in Sources */,
+				FEF351812A309F4C00BD8320 /* EmailSignInPresenter.swift in Sources */,
+				FEF351892A30A6F400BD8320 /* EmailSignInResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
