@@ -8,23 +8,33 @@
 
 import UIKit
 import ReduxCore
+import BMCommand
 
-final class MainCoordinator: ChainCoordinator {
+final class MainCoordinator: NSObject, ChainCoordinator {
     var rootViewController: UIViewController {
-        tabController
+        tabBarViewController
     }
 
-    private let tabController: UITabBarController
+    private let tabBarViewController: UITabBarController
+    private let dispatch = CommandWith(action: StoreLocator.shared.dispatch)
     
     var next: ChainCoordinator?
     
-    private let profileCoordinator = ProfileCoordinator()
     private let listCoordinator = ListCoordinator()
+    private let fastingCoordinator = FastingCoordinator()
+    private let profileCoordinator = ProfileCoordinator()
     
-    init() {
-        self.tabController = UITabBarController()
-        self.tabController.viewControllers = [
+    override init() {
+        self.tabBarViewController = UITabBarController()
+        super.init()
+        
+        self.tabBarViewController.delegate = self
+        
+        configureTabBarAppearance()
+        
+        tabBarViewController.viewControllers = [
             listCoordinator.rootViewController,
+            fastingCoordinator.rootViewController,
             profileCoordinator.rootViewController
         ]
     }
@@ -35,9 +45,51 @@ final class MainCoordinator: ChainCoordinator {
         }
         
         switch action {
-        
+        case is Actions.MainCoordinator.ShowList:
+            tabBarViewController.selectedIndex = 0
+            next = listCoordinator
+            return true
+            
+        case is Actions.MainCoordinator.ShowFasting:
+            tabBarViewController.selectedIndex = 1
+            next = fastingCoordinator
+            return true
+            
+        case is Actions.MainCoordinator.ShowProfile:
+            tabBarViewController.selectedIndex = 2
+            next = profileCoordinator
+            return true
+            
         default:
             return false
         }
+    }
+}
+
+extension MainCoordinator: UITabBarControllerDelegate {
+    func tabBarController(_ tabBarController: UITabBarController, shouldSelect viewController: UIViewController) -> Bool {
+        switch viewController {
+        case listCoordinator.rootViewController:
+            dispatch.perform(with: Actions.MainCoordinator.ShowList())
+        case fastingCoordinator.rootViewController:
+            dispatch.perform(with: Actions.MainCoordinator.ShowFasting())
+        case profileCoordinator.rootViewController:
+            dispatch.perform(with: Actions.MainCoordinator.ShowProfile())
+        default:
+            break
+        }
+        
+        return false
+    }
+}
+
+private extension MainCoordinator {
+    func configureTabBarAppearance() {
+        let tabBarAppearance = UITabBarAppearance()
+        tabBarAppearance.configureWithOpaqueBackground()
+        tabBarAppearance.backgroundColor = .white
+        
+        tabBarViewController.tabBar.standardAppearance = tabBarAppearance
+        tabBarViewController.tabBar.scrollEdgeAppearance = tabBarAppearance
     }
 }

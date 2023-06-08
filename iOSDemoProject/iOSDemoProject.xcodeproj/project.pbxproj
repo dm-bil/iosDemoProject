@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		FE02FCAC2A32139000C69C60 /* UserState.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE02FCAB2A32139000C69C60 /* UserState.swift */; };
 		FE02FCAF2A3224AD00C69C60 /* ProfilePresenterActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE02FCAE2A3224AD00C69C60 /* ProfilePresenterActions.swift */; };
+		FE02FCB12A322ED200C69C60 /* FastingCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE02FCB02A322ED200C69C60 /* FastingCoordinator.swift */; };
+		FE02FCB62A322F6A00C69C60 /* ActiveFastingPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE02FCB32A322F6A00C69C60 /* ActiveFastingPresenter.swift */; };
+		FE02FCB72A322F6A00C69C60 /* ActiveFastingScreenFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE02FCB42A322F6A00C69C60 /* ActiveFastingScreenFactory.swift */; };
+		FE02FCB82A322F6A00C69C60 /* ActiveFastingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE02FCB52A322F6A00C69C60 /* ActiveFastingViewController.swift */; };
+		FE02FCBB2A323AD900C69C60 /* MainCoordinatorActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE02FCBA2A323AD900C69C60 /* MainCoordinatorActions.swift */; };
 		FEF3517F2A309F4C00BD8320 /* EmailSignInController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF3517C2A309F4B00BD8320 /* EmailSignInController.swift */; };
 		FEF351802A309F4C00BD8320 /* EmailSignInFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF3517D2A309F4B00BD8320 /* EmailSignInFactory.swift */; };
 		FEF351812A309F4C00BD8320 /* EmailSignInPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF3517E2A309F4B00BD8320 /* EmailSignInPresenter.swift */; };
@@ -92,6 +97,11 @@
 /* Begin PBXFileReference section */
 		FE02FCAB2A32139000C69C60 /* UserState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserState.swift; sourceTree = "<group>"; };
 		FE02FCAE2A3224AD00C69C60 /* ProfilePresenterActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePresenterActions.swift; sourceTree = "<group>"; };
+		FE02FCB02A322ED200C69C60 /* FastingCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FastingCoordinator.swift; sourceTree = "<group>"; };
+		FE02FCB32A322F6A00C69C60 /* ActiveFastingPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveFastingPresenter.swift; sourceTree = "<group>"; };
+		FE02FCB42A322F6A00C69C60 /* ActiveFastingScreenFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveFastingScreenFactory.swift; sourceTree = "<group>"; };
+		FE02FCB52A322F6A00C69C60 /* ActiveFastingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveFastingViewController.swift; sourceTree = "<group>"; };
+		FE02FCBA2A323AD900C69C60 /* MainCoordinatorActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinatorActions.swift; sourceTree = "<group>"; };
 		FEF3517C2A309F4B00BD8320 /* EmailSignInController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmailSignInController.swift; sourceTree = "<group>"; };
 		FEF3517D2A309F4B00BD8320 /* EmailSignInFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmailSignInFactory.swift; sourceTree = "<group>"; };
 		FEF3517E2A309F4B00BD8320 /* EmailSignInPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmailSignInPresenter.swift; sourceTree = "<group>"; };
@@ -198,6 +208,24 @@
 				FE02FCAE2A3224AD00C69C60 /* ProfilePresenterActions.swift */,
 			);
 			path = Profile;
+			sourceTree = "<group>";
+		};
+		FE02FCB22A322F5200C69C60 /* ActiveFasting */ = {
+			isa = PBXGroup;
+			children = (
+				FE02FCB32A322F6A00C69C60 /* ActiveFastingPresenter.swift */,
+				FE02FCB42A322F6A00C69C60 /* ActiveFastingScreenFactory.swift */,
+				FE02FCB52A322F6A00C69C60 /* ActiveFastingViewController.swift */,
+			);
+			path = ActiveFasting;
+			sourceTree = "<group>";
+		};
+		FE02FCB92A323AC300C69C60 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				FE02FCBA2A323AD900C69C60 /* MainCoordinatorActions.swift */,
+			);
+			path = Navigation;
 			sourceTree = "<group>";
 		};
 		FEF3517A2A309EFE00BD8320 /* Controllers */ = {
@@ -447,6 +475,7 @@
 				FEF3519A2A30CCD800BD8320 /* MainCoordinator.swift */,
 				FEF3519F2A30DC7F00BD8320 /* ProfileCoordinator.swift */,
 				FEF351A82A30E25C00BD8320 /* ListCoordinator.swift */,
+				FE02FCB02A322ED200C69C60 /* FastingCoordinator.swift */,
 			);
 			path = Navigation;
 			sourceTree = "<group>";
@@ -468,6 +497,7 @@
 				FEFADCAC2A2F59BA00B295DF /* Login */,
 				FEF351A12A30DD3C00BD8320 /* Profile */,
 				FEF351AA2A30E2B500BD8320 /* List */,
+				FE02FCB22A322F5200C69C60 /* ActiveFasting */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -510,6 +540,7 @@
 		FEFADCC02A2F913E00B295DF /* Actions */ = {
 			isa = PBXGroup;
 			children = (
+				FE02FCB92A323AC300C69C60 /* Navigation */,
 				FE02FCAD2A32249C00C69C60 /* Profile */,
 				FEFADCCE2A2F9BE500B295DF /* Login */,
 				FEFADCC82A2F925800B295DF /* SideEffects */,
@@ -727,10 +758,12 @@
 				FE02FCAC2A32139000C69C60 /* UserState.swift in Sources */,
 				FEF351A62A30DD6700BD8320 /* ProfileScreenFactory.swift in Sources */,
 				FEFADCCD2A2F944B00B295DF /* CoordinatorMiddleware.swift in Sources */,
+				FE02FCB82A322F6A00C69C60 /* ActiveFastingViewController.swift in Sources */,
 				FEF351952A30B46100BD8320 /* EmailSignInPresenterActions.swift in Sources */,
 				FEFADCC32A2F915500B295DF /* ApplicationActions.swift in Sources */,
 				FEFADCD32A2F9D4200B295DF /* CredentialsValidator.swift in Sources */,
 				FEFADCA82A2A3B7A00B295DF /* ChainCoordinator.swift in Sources */,
+				FE02FCB62A322F6A00C69C60 /* ActiveFastingPresenter.swift in Sources */,
 				FEF3517F2A309F4C00BD8320 /* EmailSignInController.swift in Sources */,
 				FEFADC562A29EBA500B295DF /* AppDelegate.swift in Sources */,
 				FEF3518B2A30A74B00BD8320 /* AuthTokenInfoResponse.swift in Sources */,
@@ -746,6 +779,7 @@
 				FEF351A52A30DD6700BD8320 /* ProfilePresenter.swift in Sources */,
 				FEFADCA52A2A3B1200B295DF /* AppCoordinator.swift in Sources */,
 				FEFADC972A2A1E7000B295DF /* AuthState.swift in Sources */,
+				FE02FCB72A322F6A00C69C60 /* ActiveFastingScreenFactory.swift in Sources */,
 				FEFADC9D2A2A1FCB00B295DF /* EmailAuthError.swift in Sources */,
 				FEF351992A30BDEA00BD8320 /* SideEffectsMiddleware.swift in Sources */,
 				FEF351842A30A1B000BD8320 /* RequestManager.swift in Sources */,
@@ -757,6 +791,7 @@
 				FEFADCD02A2F9BF300B295DF /* LoginPresenterActions.swift in Sources */,
 				FEF351802A309F4C00BD8320 /* EmailSignInFactory.swift in Sources */,
 				FEF351972A30B79600BD8320 /* UserProperties.swift in Sources */,
+				FE02FCBB2A323AD900C69C60 /* MainCoordinatorActions.swift in Sources */,
 				FEFADCD72A2F9E4900B295DF /* CustomOperators.swift in Sources */,
 				FEFADCD52A2F9D9400B295DF /* EmailAuthInputState.swift in Sources */,
 				FEFADC992A2A1F7900B295DF /* EmailAccount.swift in Sources */,
@@ -764,6 +799,7 @@
 				FEFADCC72A2F920A00B295DF /* NavigationMiddleware.swift in Sources */,
 				FEF3518D2A30A76000BD8320 /* EmailAccountResponse.swift in Sources */,
 				FEF3519E2A30D2EF00BD8320 /* LoaderViewController.swift in Sources */,
+				FE02FCB12A322ED200C69C60 /* FastingCoordinator.swift in Sources */,
 				FEFADC9B2A2A1F8D00B295DF /* AuthTokenInfo.swift in Sources */,
 				FEFADCCB2A2F926800B295DF /* NavigationMiddlewareActions.swift in Sources */,
 				FEF3519B2A30CCD800BD8320 /* MainCoordinator.swift in Sources */,
