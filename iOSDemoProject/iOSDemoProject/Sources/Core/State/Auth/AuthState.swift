@@ -8,7 +8,7 @@
 import Foundation
 import ReduxCore
 
-enum AuthState: Equatable {
+enum AuthState: Equatable, Codable {
     case idle
     case email(AuthState.Email)
     
@@ -22,12 +22,14 @@ enum AuthState: Equatable {
         var remoteData: AuthTokenInfo
     }
     
-    enum Email: Equatable {
+    enum Email: Equatable, Codable {
         case signingIn(AuthState.EmailCredentials)
         case authorized(AuthState.EmailAuthorized)
         case signingInFailed(EmailAuthError)
         case loggingOut(AuthState.EmailAuthorized)
     }
+    
+    static let initial = AuthState.idle
 }
 
 func reduce(_ state: AuthState, with action: Action) -> AuthState {

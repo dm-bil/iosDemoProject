@@ -11,12 +11,14 @@ import Foundation
 
 final class SideEffectsMiddleware {
     private var emailSignInController: EmailSignInController?
+    private var storeBackupController: StoreBackupController?
     
     func middleware() -> Middleware<AppState> {
         { (_, action: Action, _, newState: AppState) in
             switch action {
             case is Actions.Application.DidFinishLaunch:
                 self.emailSignInController = EmailSignInFactory().default()
+                self.storeBackupController = StoreBackupFactory().default()
                 
             default:
                 break

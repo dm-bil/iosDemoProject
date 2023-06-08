@@ -30,6 +30,11 @@
 		FEF351AE2A30E2C800BD8320 /* ListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF351AB2A30E2C800BD8320 /* ListPresenter.swift */; };
 		FEF351AF2A30E2C800BD8320 /* ListScreenFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF351AC2A30E2C800BD8320 /* ListScreenFactory.swift */; };
 		FEF351B02A30E2C800BD8320 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF351AD2A30E2C800BD8320 /* ListViewController.swift */; };
+		FEF351BE2A31D8E900BD8320 /* StoreBackupController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF351BD2A31D8E900BD8320 /* StoreBackupController.swift */; };
+		FEF351C12A31D98200BD8320 /* StoreBackupFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF351C02A31D98200BD8320 /* StoreBackupFactory.swift */; };
+		FEF351C32A31DA4D00BD8320 /* StoreBackupPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF351C22A31DA4D00BD8320 /* StoreBackupPresenter.swift */; };
+		FEF351C52A31EAF000BD8320 /* CodableStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF351C42A31EAF000BD8320 /* CodableStorage.swift */; };
+		FEF351C72A31EB7C00BD8320 /* RestoreInitialState.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF351C62A31EB7C00BD8320 /* RestoreInitialState.swift */; };
 		FEFADC562A29EBA500B295DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEFADC552A29EBA500B295DF /* AppDelegate.swift */; };
 		FEFADC5F2A29EBA600B295DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FEFADC5E2A29EBA600B295DF /* Assets.xcassets */; };
 		FEFADC622A29EBA600B295DF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEFADC602A29EBA600B295DF /* LaunchScreen.storyboard */; };
@@ -106,6 +111,11 @@
 		FEF351AB2A30E2C800BD8320 /* ListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListPresenter.swift; sourceTree = "<group>"; };
 		FEF351AC2A30E2C800BD8320 /* ListScreenFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListScreenFactory.swift; sourceTree = "<group>"; };
 		FEF351AD2A30E2C800BD8320 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		FEF351BD2A31D8E900BD8320 /* StoreBackupController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreBackupController.swift; sourceTree = "<group>"; };
+		FEF351C02A31D98200BD8320 /* StoreBackupFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreBackupFactory.swift; sourceTree = "<group>"; };
+		FEF351C22A31DA4D00BD8320 /* StoreBackupPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreBackupPresenter.swift; sourceTree = "<group>"; };
+		FEF351C42A31EAF000BD8320 /* CodableStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableStorage.swift; sourceTree = "<group>"; };
+		FEF351C62A31EB7C00BD8320 /* RestoreInitialState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestoreInitialState.swift; sourceTree = "<group>"; };
 		FEFADC522A29EBA500B295DF /* iOSDemoProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSDemoProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEFADC552A29EBA500B295DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FEFADC5E2A29EBA600B295DF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -173,6 +183,7 @@
 		FEF3517A2A309EFE00BD8320 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				FEF351BF2A31D93800BD8320 /* StoreBackup */,
 				FEF3517B2A309F3300BD8320 /* SignIn */,
 			);
 			path = Controllers;
@@ -252,6 +263,16 @@
 				FEF351AD2A30E2C800BD8320 /* ListViewController.swift */,
 			);
 			path = List;
+			sourceTree = "<group>";
+		};
+		FEF351BF2A31D93800BD8320 /* StoreBackup */ = {
+			isa = PBXGroup;
+			children = (
+				FEF351BD2A31D8E900BD8320 /* StoreBackupController.swift */,
+				FEF351C22A31DA4D00BD8320 /* StoreBackupPresenter.swift */,
+				FEF351C02A31D98200BD8320 /* StoreBackupFactory.swift */,
+			);
+			path = StoreBackup;
 			sourceTree = "<group>";
 		};
 		FEFADC492A29EBA500B295DF = {
@@ -532,6 +553,8 @@
 			children = (
 				FEFADCD62A2F9E4900B295DF /* CustomOperators.swift */,
 				FEFADCD22A2F9D4200B295DF /* CredentialsValidator.swift */,
+				FEF351C42A31EAF000BD8320 /* CodableStorage.swift */,
+				FEF351C62A31EB7C00BD8320 /* RestoreInitialState.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -694,6 +717,7 @@
 				FEF351862A30A63300BD8320 /* Request.swift in Sources */,
 				FEFADCA22A2A22AE00B295DF /* StoreLocator.swift in Sources */,
 				FEF351922A30AAD600BD8320 /* RequestManagerImpl.swift in Sources */,
+				FEF351C12A31D98200BD8320 /* StoreBackupFactory.swift in Sources */,
 				FEFADCB22A2F5B9500B295DF /* LoginViewController.swift in Sources */,
 				FEF3518F2A30A90000BD8320 /* UserPropertiesResponse.swift in Sources */,
 				FEF351A52A30DD6700BD8320 /* ProfilePresenter.swift in Sources */,
@@ -724,8 +748,12 @@
 				FEFADCBF2A2F8FF200B295DF /* AppLaunchViewController.swift in Sources */,
 				FEF351A92A30E25C00BD8320 /* ListCoordinator.swift in Sources */,
 				FEF351A72A30DD6700BD8320 /* ProfileViewController.swift in Sources */,
+				FEF351C52A31EAF000BD8320 /* CodableStorage.swift in Sources */,
 				FEF351812A309F4C00BD8320 /* EmailSignInPresenter.swift in Sources */,
 				FEF351892A30A6F400BD8320 /* EmailSignInResponse.swift in Sources */,
+				FEF351C32A31DA4D00BD8320 /* StoreBackupPresenter.swift in Sources */,
+				FEF351BE2A31D8E900BD8320 /* StoreBackupController.swift in Sources */,
+				FEF351C72A31EB7C00BD8320 /* RestoreInitialState.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -25,7 +25,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     private func configureStore() {
         let store = Store(
-            state: AppState.initial,
+            state: restoreState(),
             reducer: reduce,
             middlewares: [
                 SideEffectsMiddleware().middleware(),
