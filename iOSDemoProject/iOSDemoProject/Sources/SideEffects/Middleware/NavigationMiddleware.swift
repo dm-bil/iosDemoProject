@@ -25,6 +25,9 @@ final class NavigationMiddleware {
             case is Actions.EmailSignInPresenter.Succeeded:
                 dispatch(Actions.NavigationMiddleware.ShowMain())
                 
+            case is Actions.EmailSignInPresenter.SignOutSuccess:
+                dispatch(Actions.NavigationMiddleware.ShowLogin())
+                
             default:
                 break
             }

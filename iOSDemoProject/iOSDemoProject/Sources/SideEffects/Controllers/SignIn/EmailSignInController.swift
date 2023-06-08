@@ -18,6 +18,7 @@ public final class EmailSignInController: NSObject {
         enum State: Equatable {
             case idle
             case signIn(data: RequestData, onSuccess: CommandWith<ResponseData>, onFailure: CommandWith<Error>)
+            case signOut(onSuccess: Command)
         }
         
         struct RequestData: Equatable {
@@ -66,10 +67,16 @@ public final class EmailSignInController: NSObject {
             break
         case let .signIn(data, onSuccess, onFailure):
             signIn(data: data, onSuccess: onSuccess, onFailure: onFailure)
+        case let .signOut(onSuccess):
+            signOut(onSuccess: onSuccess)
         }
     }
     
-    // MARK: Sign in
+    private func signOut(onSuccess: Command) {
+        cancel = requestManager.v5SingOutPost().perform { result in
+            onSuccess.perform()
+        }
+    }
     
     private func signIn(data: EmailSignInController.Props.RequestData, onSuccess: CommandWith<EmailSignInController.Props.ResponseData>, onFailure: CommandWith<Error>) {
         cancel = requestManager.v5EmailSingInPost(
@@ -99,12 +106,6 @@ public final class EmailSignInController: NSObject {
                 
                 onSuccess.perform(with: responseData)
                 
-//            case .failure(ApiServiceError.cancelled):
-//                break
-//                
-//            case .failure(ApiServiceError.httpError(let code, _, _)) where code == 404:
-//                onFailure.perform(with: EmailSignInError.credentialInvalid)
-//                
             case .failure(let error):
                 onFailure.perform(with: error)
             }

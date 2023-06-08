@@ -54,6 +54,17 @@ func reduce(_ state: AuthState, with action: Action) -> AuthState {
             )
         )
         
+    case is Actions.ProfilePresenter.SignOut:
+        guard case .email(.authorized(let credentials)) = state
+        else { return state }
+        
+        return .email(
+            .loggingOut(credentials)
+        )
+        
+    case is Actions.EmailSignInPresenter.SignOutSuccess:
+        return .idle
+        
     default:
         return state
     }

@@ -18,6 +18,7 @@ struct StoreBackupPresenter {
         render.perform(
             with: StoreBackupController.Props(
                 auth: state.auth,
+                user: state.user,
                 onDestroy: endObserving
             )
         )

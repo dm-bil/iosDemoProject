@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FE02FCAC2A32139000C69C60 /* UserState.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE02FCAB2A32139000C69C60 /* UserState.swift */; };
+		FE02FCAF2A3224AD00C69C60 /* ProfilePresenterActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE02FCAE2A3224AD00C69C60 /* ProfilePresenterActions.swift */; };
 		FEF3517F2A309F4C00BD8320 /* EmailSignInController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF3517C2A309F4B00BD8320 /* EmailSignInController.swift */; };
 		FEF351802A309F4C00BD8320 /* EmailSignInFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF3517D2A309F4B00BD8320 /* EmailSignInFactory.swift */; };
 		FEF351812A309F4C00BD8320 /* EmailSignInPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF3517E2A309F4B00BD8320 /* EmailSignInPresenter.swift */; };
@@ -88,6 +90,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FE02FCAB2A32139000C69C60 /* UserState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserState.swift; sourceTree = "<group>"; };
+		FE02FCAE2A3224AD00C69C60 /* ProfilePresenterActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePresenterActions.swift; sourceTree = "<group>"; };
 		FEF3517C2A309F4B00BD8320 /* EmailSignInController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmailSignInController.swift; sourceTree = "<group>"; };
 		FEF3517D2A309F4B00BD8320 /* EmailSignInFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmailSignInFactory.swift; sourceTree = "<group>"; };
 		FEF3517E2A309F4B00BD8320 /* EmailSignInPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmailSignInPresenter.swift; sourceTree = "<group>"; };
@@ -180,6 +184,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FE02FCAA2A32137D00C69C60 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				FE02FCAB2A32139000C69C60 /* UserState.swift */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
+		FE02FCAD2A32249C00C69C60 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				FE02FCAE2A3224AD00C69C60 /* ProfilePresenterActions.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
 		FEF3517A2A309EFE00BD8320 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -384,6 +404,7 @@
 		FEFADC932A2A1C8F00B295DF /* State */ = {
 			isa = PBXGroup;
 			children = (
+				FE02FCAA2A32137D00C69C60 /* User */,
 				FEFADC952A2A1E5200B295DF /* Auth */,
 				FEFADC9E2A2A212B00B295DF /* AppState.swift */,
 			);
@@ -489,6 +510,7 @@
 		FEFADCC02A2F913E00B295DF /* Actions */ = {
 			isa = PBXGroup;
 			children = (
+				FE02FCAD2A32249C00C69C60 /* Profile */,
 				FEFADCCE2A2F9BE500B295DF /* Login */,
 				FEFADCC82A2F925800B295DF /* SideEffects */,
 				FEFADCC12A2F914C00B295DF /* Application */,
@@ -702,6 +724,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE02FCAC2A32139000C69C60 /* UserState.swift in Sources */,
 				FEF351A62A30DD6700BD8320 /* ProfileScreenFactory.swift in Sources */,
 				FEFADCCD2A2F944B00B295DF /* CoordinatorMiddleware.swift in Sources */,
 				FEF351952A30B46100BD8320 /* EmailSignInPresenterActions.swift in Sources */,
@@ -749,6 +772,7 @@
 				FEF351A92A30E25C00BD8320 /* ListCoordinator.swift in Sources */,
 				FEF351A72A30DD6700BD8320 /* ProfileViewController.swift in Sources */,
 				FEF351C52A31EAF000BD8320 /* CodableStorage.swift in Sources */,
+				FE02FCAF2A3224AD00C69C60 /* ProfilePresenterActions.swift in Sources */,
 				FEF351812A309F4C00BD8320 /* EmailSignInPresenter.swift in Sources */,
 				FEF351892A30A6F400BD8320 /* EmailSignInResponse.swift in Sources */,
 				FEF351C32A31DA4D00BD8320 /* StoreBackupPresenter.swift in Sources */,

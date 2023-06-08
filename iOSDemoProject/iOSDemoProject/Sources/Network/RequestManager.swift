@@ -10,4 +10,5 @@ import Foundation
 
 protocol RequestManager {
     func v5EmailSingInPost(email: String, password: String) -> Request<EmailSignInResponse>
+    func v5SingOutPost() -> Request<Void>
 }

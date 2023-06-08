@@ -10,10 +10,12 @@ import ReduxCore
 
 struct AppState: Equatable {
     let auth: AuthState
+    let user: UserState
     let emailAuthInput: EmailAuthInputState?
     
     static let initial = AppState(
         auth: .idle,
+        user: .initial,
         emailAuthInput: nil
     )
 }
@@ -21,6 +23,7 @@ struct AppState: Equatable {
 func reduce(_ state: AppState, with action: Action) -> AppState {
     AppState(
         auth: reduce(state.auth, with: action),
+        user: reduce(state.user, with: action),
         emailAuthInput: reduce(state.emailAuthInput, with: action)
     )
 }

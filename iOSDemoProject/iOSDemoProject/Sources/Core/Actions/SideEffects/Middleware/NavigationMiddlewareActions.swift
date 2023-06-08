@@ -8,14 +8,10 @@
 import ReduxCore
 import Foundation
 
-public extension Actions {
+extension Actions {
     enum NavigationMiddleware {
-        public struct ShowLogin: Action {
-            public init() {}
-        }
+        struct ShowLogin: Action {}
         
-        public struct ShowMain: Action {
-            public init() {}
-        }
+        struct ShowMain: Action {}
     }
 }

@@ -14,10 +14,13 @@ extension Actions {
         struct Succeeded: Action {
             let authTokenInfo: AuthTokenInfo
             let emailAccount: EmailAccount
+            let userProperties: UserProperties
         }
         
         struct Failed: Action {
             let error: EmailAuthError
         }
+        
+        struct SignOutSuccess: Action {}
     }
 }

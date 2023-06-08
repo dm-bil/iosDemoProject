@@ -20,10 +20,28 @@ struct EmailSignInPresenter {
     }
     
     private func makePropsState(from state: AppState) -> EmailSignInController.Props.State {
-        guard
-            case .email(.signingIn(let credentials)) = state.auth
-        else { return .idle }
-        
+        switch state.auth {
+        case .idle:
+            return .idle
+        case .email(let authState):
+            switch authState {
+            case .authorized, .signingInFailed:
+                return .idle
+            case .signingIn(let credentials):
+                return signInSatate(from: credentials)
+            case .loggingOut:
+                return signOutSatate()
+            }
+        }
+    }
+    
+    private func signOutSatate() -> EmailSignInController.Props.State {
+        return .signOut(
+            onSuccess: dispatch.bind(to: Actions.EmailSignInPresenter.SignOutSuccess(), id: "onSuccess")
+        )
+    }
+    
+    private func signInSatate(from credentials: AuthState.EmailCredentials) -> EmailSignInController.Props.State {
         let requestData = EmailSignInController.Props.RequestData(
             email: credentials.email,
             password: credentials.password
@@ -34,7 +52,13 @@ struct EmailSignInPresenter {
             onSuccess: CommandWith(id: "onSuccess") { response in
                 let action = Actions.EmailSignInPresenter.Succeeded(
                     authTokenInfo: response.auth,
-                    emailAccount: response.emailAccount
+                    emailAccount: response.emailAccount,
+                    userProperties: UserProperties(
+                        fullName: response.userProperties.fullName,
+                        avatarUrl: response.userProperties.avatarUrl,
+                        dateOfBirth: response.userProperties.dateOfBirth,
+                        about: response.userProperties.about
+                    )
                 )
                 dispatch.perform(with: action)
             },

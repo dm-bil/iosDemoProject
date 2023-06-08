@@ -13,6 +13,7 @@ import BMCommand
 final class StoreBackupController {
     struct Props: Equatable {
         let auth: AuthState
+        let user: UserState
         
         let onDestroy: Command
     }
@@ -20,11 +21,13 @@ final class StoreBackupController {
     private var props: StoreBackupController.Props?
     
     private let authStorage = CodableStorage<AuthState>()
+    private let userStorage = CodableStorage<UserState>()
     
     func render(props: StoreBackupController.Props) {
         guard self.props != props else { return }
         
         storeDefaults(storage: authStorage, newValue: props.auth)
+        storeDefaults(storage: userStorage, newValue: props.user)
     }
     
     private func storeDefaults<T: Codable>(storage: CodableStorage<T>, newValue: T?) {

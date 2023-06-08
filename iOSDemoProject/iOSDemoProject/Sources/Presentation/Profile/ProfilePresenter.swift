@@ -18,8 +18,15 @@ struct ProfilePresenter {
     let endObserving: Command
     
     func present(state: AppState) {
+        guard let userProperties = state.user.properties else { return }
+        
         render.perform(
             with: Props(
+                avatarURL: userProperties.avatarUrl,
+                fullName: userProperties.fullName,
+                dateOfBirth: userProperties.dateOfBirth,
+                about: userProperties.about,
+                onLogOut: dispatch.bind(to: Actions.ProfilePresenter.SignOut()),
                 onDestroy: endObserving
             )
         )

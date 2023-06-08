@@ -25,6 +25,20 @@ final class RequestManagerImpl: RequestManager {
             }
         }
     }
+    
+    func v5SingOutPost() -> Request<Void> {
+        return Request<Void> { completion in
+            let task = Task {
+                try await Task.sleep(nanoseconds: UInt64(1 * 1_000_000_000))
+                
+                completion(.success(Void()))
+            }
+            
+            return Command {
+                task.cancel()
+            }
+        }
+    }
 }
 
 private extension RequestManagerImpl {
@@ -33,7 +47,7 @@ private extension RequestManagerImpl {
             userProperties: UserPropertiesResponse(
                 fullName: "Shawn Howard",
                 avatarUrl: nil,
-                dateOfBirth: DateComponents(year: 20000, month: 1, day: 1),
+                dateOfBirth: DateComponents(year: 2000, month: 1, day: 1),
                 about: "One answer is that Truth pertains to the possibility that an event will occur. If true – it must occur and if false, it cannot occur. This is a binary world of extreme existential."
             ),
             emailAccount: EmailAccountResponse(

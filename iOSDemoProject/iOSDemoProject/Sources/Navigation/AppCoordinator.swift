@@ -57,6 +57,15 @@ final class AppCoordinator: ChainCoordinator {
             hideLoader()
             return true
             
+        case is Actions.ProfilePresenter.SignOut:
+            guard case .email(.loggingOut) = state.auth else { return false }
+            showLoader()
+            return true
+            
+        case is Actions.EmailSignInPresenter.SignOutSuccess:
+            hideLoader()
+            return true
+            
         default:
             return false
         }

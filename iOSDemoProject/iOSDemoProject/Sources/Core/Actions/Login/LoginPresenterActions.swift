@@ -8,28 +8,28 @@
 import ReduxCore
 import Foundation
 
-public extension Actions {
+extension Actions {
     enum LoginPresenter {
-        public struct EmailDidChange: Action {
-            public let email: String
-            public init(email: String) {
+        struct EmailDidChange: Action {
+            let email: String
+            init(email: String) {
                 self.email = email
             }
         }
         
-        public struct PasswordDidChange: Action {
-            public let password: String
+        struct PasswordDidChange: Action {
+            let password: String
             
-            public init(password: String) {
+            init(password: String) {
                 self.password = password
             }
         }
         
-        public struct SignIn: Action {
-            public let email: String
-            public let password: String
+        struct SignIn: Action {
+            let email: String
+            let password: String
             
-            public init(email: String, password: String) {
+            init(email: String, password: String) {
                 self.email = email
                 self.password = password
             }
