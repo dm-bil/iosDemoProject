@@ -24,8 +24,13 @@ struct FastingState: Equatable {
 func reduce(_ state: FastingState, with action: Action) -> FastingState {
     switch action {
     case is Actions.ListPresenter.Appeared:
-        return state | {
-            $0.content = .loading
+        switch state.content {
+        case .idle:
+            return state | {
+                $0.content = .loading
+            }
+        case .loading, .loaded:
+            return state
         }
         
     case let action as Actions.FastingLoadingPresenter.Loaded:
