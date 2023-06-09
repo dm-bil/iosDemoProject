@@ -75,6 +75,16 @@
 		FEFADCD32A2F9D4200B295DF /* CredentialsValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEFADCD22A2F9D4200B295DF /* CredentialsValidator.swift */; };
 		FEFADCD52A2F9D9400B295DF /* EmailAuthInputState.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEFADCD42A2F9D9400B295DF /* EmailAuthInputState.swift */; };
 		FEFADCD72A2F9E4900B295DF /* CustomOperators.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEFADCD62A2F9E4900B295DF /* CustomOperators.swift */; };
+		FEFE80BC2A3353EE00D3AA4F /* ListItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEFE80BB2A3353EE00D3AA4F /* ListItemCell.swift */; };
+		FEFE80BE2A33651600D3AA4F /* UITableViewCellExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEFE80BD2A33651600D3AA4F /* UITableViewCellExtensions.swift */; };
+		FEFE80C02A336B9E00D3AA4F /* CollectionExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEFE80BF2A336B9E00D3AA4F /* CollectionExtensions.swift */; };
+		FEFE80C32A337C2700D3AA4F /* FastingState.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEFE80C22A337C2700D3AA4F /* FastingState.swift */; };
+		FEFE80C52A337D0600D3AA4F /* Fasting.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEFE80C42A337D0600D3AA4F /* Fasting.swift */; };
+		FEFE80C82A33811700D3AA4F /* ListPresenterActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEFE80C72A33811700D3AA4F /* ListPresenterActions.swift */; };
+		FEFE80CB2A33839500D3AA4F /* FastingLoadingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEFE80CA2A33839500D3AA4F /* FastingLoadingController.swift */; };
+		FEFE80CD2A33879700D3AA4F /* FastingLoadingPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEFE80CC2A33879700D3AA4F /* FastingLoadingPresenter.swift */; };
+		FEFE80CF2A33888900D3AA4F /* FastingLoadingPresenterActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEFE80CE2A33888900D3AA4F /* FastingLoadingPresenterActions.swift */; };
+		FEFE80D12A33893B00D3AA4F /* FastingLoadingFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEFE80D02A33893B00D3AA4F /* FastingLoadingFactory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -163,6 +173,16 @@
 		FEFADCD22A2F9D4200B295DF /* CredentialsValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CredentialsValidator.swift; sourceTree = "<group>"; };
 		FEFADCD42A2F9D9400B295DF /* EmailAuthInputState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmailAuthInputState.swift; sourceTree = "<group>"; };
 		FEFADCD62A2F9E4900B295DF /* CustomOperators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomOperators.swift; sourceTree = "<group>"; };
+		FEFE80BB2A3353EE00D3AA4F /* ListItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItemCell.swift; sourceTree = "<group>"; };
+		FEFE80BD2A33651600D3AA4F /* UITableViewCellExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableViewCellExtensions.swift; sourceTree = "<group>"; };
+		FEFE80BF2A336B9E00D3AA4F /* CollectionExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionExtensions.swift; sourceTree = "<group>"; };
+		FEFE80C22A337C2700D3AA4F /* FastingState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FastingState.swift; sourceTree = "<group>"; };
+		FEFE80C42A337D0600D3AA4F /* Fasting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fasting.swift; sourceTree = "<group>"; };
+		FEFE80C72A33811700D3AA4F /* ListPresenterActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListPresenterActions.swift; sourceTree = "<group>"; };
+		FEFE80CA2A33839500D3AA4F /* FastingLoadingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FastingLoadingController.swift; sourceTree = "<group>"; };
+		FEFE80CC2A33879700D3AA4F /* FastingLoadingPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FastingLoadingPresenter.swift; sourceTree = "<group>"; };
+		FEFE80CE2A33888900D3AA4F /* FastingLoadingPresenterActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FastingLoadingPresenterActions.swift; sourceTree = "<group>"; };
+		FEFE80D02A33893B00D3AA4F /* FastingLoadingFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FastingLoadingFactory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -231,6 +251,7 @@
 		FEF3517A2A309EFE00BD8320 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				FEFE80C92A33826400D3AA4F /* FastingLoading */,
 				FEF351BF2A31D93800BD8320 /* StoreBackup */,
 				FEF3517B2A309F3300BD8320 /* SignIn */,
 			);
@@ -281,6 +302,7 @@
 			isa = PBXGroup;
 			children = (
 				FEF351942A30B46100BD8320 /* EmailSignInPresenterActions.swift */,
+				FEFE80CE2A33888900D3AA4F /* FastingLoadingPresenterActions.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -306,6 +328,7 @@
 		FEF351AA2A30E2B500BD8320 /* List */ = {
 			isa = PBXGroup;
 			children = (
+				FEFE80BA2A3353B000D3AA4F /* View */,
 				FEF351AB2A30E2C800BD8320 /* ListPresenter.swift */,
 				FEF351AC2A30E2C800BD8320 /* ListScreenFactory.swift */,
 				FEF351AD2A30E2C800BD8320 /* ListViewController.swift */,
@@ -432,6 +455,7 @@
 		FEFADC932A2A1C8F00B295DF /* State */ = {
 			isa = PBXGroup;
 			children = (
+				FEFE80C12A337C1600D3AA4F /* Fasting */,
 				FE02FCAA2A32137D00C69C60 /* User */,
 				FEFADC952A2A1E5200B295DF /* Auth */,
 				FEFADC9E2A2A212B00B295DF /* AppState.swift */,
@@ -446,6 +470,7 @@
 				FEFADC9A2A2A1F8D00B295DF /* AuthTokenInfo.swift */,
 				FEFADC982A2A1F7900B295DF /* EmailAccount.swift */,
 				FEF351962A30B79600BD8320 /* UserProperties.swift */,
+				FEFE80C42A337D0600D3AA4F /* Fasting.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -525,6 +550,8 @@
 			isa = PBXGroup;
 			children = (
 				FEFADCBB2A2F651B00B295DF /* ColorExtensions.swift */,
+				FEFE80BF2A336B9E00D3AA4F /* CollectionExtensions.swift */,
+				FEFE80BD2A33651600D3AA4F /* UITableViewCellExtensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -540,6 +567,7 @@
 		FEFADCC02A2F913E00B295DF /* Actions */ = {
 			isa = PBXGroup;
 			children = (
+				FEFE80C62A33810A00D3AA4F /* List */,
 				FE02FCB92A323AC300C69C60 /* Navigation */,
 				FE02FCAD2A32249C00C69C60 /* Profile */,
 				FEFADCCE2A2F9BE500B295DF /* Login */,
@@ -610,6 +638,40 @@
 				FEF351C62A31EB7C00BD8320 /* RestoreInitialState.swift */,
 			);
 			path = Common;
+			sourceTree = "<group>";
+		};
+		FEFE80BA2A3353B000D3AA4F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FEFE80BB2A3353EE00D3AA4F /* ListItemCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FEFE80C12A337C1600D3AA4F /* Fasting */ = {
+			isa = PBXGroup;
+			children = (
+				FEFE80C22A337C2700D3AA4F /* FastingState.swift */,
+			);
+			path = Fasting;
+			sourceTree = "<group>";
+		};
+		FEFE80C62A33810A00D3AA4F /* List */ = {
+			isa = PBXGroup;
+			children = (
+				FEFE80C72A33811700D3AA4F /* ListPresenterActions.swift */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		FEFE80C92A33826400D3AA4F /* FastingLoading */ = {
+			isa = PBXGroup;
+			children = (
+				FEFE80CA2A33839500D3AA4F /* FastingLoadingController.swift */,
+				FEFE80CC2A33879700D3AA4F /* FastingLoadingPresenter.swift */,
+				FEFE80D02A33893B00D3AA4F /* FastingLoadingFactory.swift */,
+			);
+			path = FastingLoading;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -771,8 +833,10 @@
 				FEF351AE2A30E2C800BD8320 /* ListPresenter.swift in Sources */,
 				FEF351B02A30E2C800BD8320 /* ListViewController.swift in Sources */,
 				FEF351862A30A63300BD8320 /* Request.swift in Sources */,
+				FEFE80C82A33811700D3AA4F /* ListPresenterActions.swift in Sources */,
 				FEFADCA22A2A22AE00B295DF /* StoreLocator.swift in Sources */,
 				FEF351922A30AAD600BD8320 /* RequestManagerImpl.swift in Sources */,
+				FEFE80C32A337C2700D3AA4F /* FastingState.swift in Sources */,
 				FEF351C12A31D98200BD8320 /* StoreBackupFactory.swift in Sources */,
 				FEFADCB22A2F5B9500B295DF /* LoginViewController.swift in Sources */,
 				FEF3518F2A30A90000BD8320 /* UserPropertiesResponse.swift in Sources */,
@@ -784,8 +848,10 @@
 				FEF351992A30BDEA00BD8320 /* SideEffectsMiddleware.swift in Sources */,
 				FEF351842A30A1B000BD8320 /* RequestManager.swift in Sources */,
 				FEF351AF2A30E2C800BD8320 /* ListScreenFactory.swift in Sources */,
+				FEFE80C02A336B9E00D3AA4F /* CollectionExtensions.swift in Sources */,
 				FEFADCB12A2F5B9500B295DF /* LoginScreenFactory.swift in Sources */,
 				FEFADC9F2A2A212B00B295DF /* AppState.swift in Sources */,
+				FEFE80CF2A33888900D3AA4F /* FastingLoadingPresenterActions.swift in Sources */,
 				FEFADC8A2A2A051700B295DF /* main.swift in Sources */,
 				FEFADCB02A2F5B9500B295DF /* LoginPresenter.swift in Sources */,
 				FEFADCD02A2F9BF300B295DF /* LoginPresenterActions.swift in Sources */,
@@ -795,14 +861,19 @@
 				FEFADCD72A2F9E4900B295DF /* CustomOperators.swift in Sources */,
 				FEFADCD52A2F9D9400B295DF /* EmailAuthInputState.swift in Sources */,
 				FEFADC992A2A1F7900B295DF /* EmailAccount.swift in Sources */,
+				FEFE80CB2A33839500D3AA4F /* FastingLoadingController.swift in Sources */,
+				FEFE80BE2A33651600D3AA4F /* UITableViewCellExtensions.swift in Sources */,
 				FEFADCAA2A2A3BE600B295DF /* ContainerViewController.swift in Sources */,
 				FEFADCC72A2F920A00B295DF /* NavigationMiddleware.swift in Sources */,
+				FEFE80D12A33893B00D3AA4F /* FastingLoadingFactory.swift in Sources */,
 				FEF3518D2A30A76000BD8320 /* EmailAccountResponse.swift in Sources */,
 				FEF3519E2A30D2EF00BD8320 /* LoaderViewController.swift in Sources */,
+				FEFE80BC2A3353EE00D3AA4F /* ListItemCell.swift in Sources */,
 				FE02FCB12A322ED200C69C60 /* FastingCoordinator.swift in Sources */,
 				FEFADC9B2A2A1F8D00B295DF /* AuthTokenInfo.swift in Sources */,
 				FEFADCCB2A2F926800B295DF /* NavigationMiddlewareActions.swift in Sources */,
 				FEF3519B2A30CCD800BD8320 /* MainCoordinator.swift in Sources */,
+				FEFE80C52A337D0600D3AA4F /* Fasting.swift in Sources */,
 				FEFADCBC2A2F651B00B295DF /* ColorExtensions.swift in Sources */,
 				FEFADCBF2A2F8FF200B295DF /* AppLaunchViewController.swift in Sources */,
 				FEF351A92A30E25C00BD8320 /* ListCoordinator.swift in Sources */,
@@ -811,6 +882,7 @@
 				FE02FCAF2A3224AD00C69C60 /* ProfilePresenterActions.swift in Sources */,
 				FEF351812A309F4C00BD8320 /* EmailSignInPresenter.swift in Sources */,
 				FEF351892A30A6F400BD8320 /* EmailSignInResponse.swift in Sources */,
+				FEFE80CD2A33879700D3AA4F /* FastingLoadingPresenter.swift in Sources */,
 				FEF351C32A31DA4D00BD8320 /* StoreBackupPresenter.swift in Sources */,
 				FEF351BE2A31D8E900BD8320 /* StoreBackupController.swift in Sources */,
 				FEF351C72A31EB7C00BD8320 /* RestoreInitialState.swift in Sources */,
@@ -1008,9 +1080,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 25946FSZU5;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "iOSDemoProject/Supporting Files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -1025,6 +1097,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.betterme.iOSDemoProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

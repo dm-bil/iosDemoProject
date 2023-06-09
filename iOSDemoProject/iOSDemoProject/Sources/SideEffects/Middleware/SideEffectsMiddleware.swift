@@ -12,6 +12,7 @@ import Foundation
 final class SideEffectsMiddleware {
     private var emailSignInController: EmailSignInController?
     private var storeBackupController: StoreBackupController?
+    private var fastingLoadingController: FastingLoadingController?
     
     func middleware() -> Middleware<AppState> {
         { (_, action: Action, _, newState: AppState) in
@@ -19,6 +20,7 @@ final class SideEffectsMiddleware {
             case is Actions.Application.DidFinishLaunch:
                 self.emailSignInController = EmailSignInFactory().default()
                 self.storeBackupController = StoreBackupFactory().default()
+                self.fastingLoadingController = FastingLoadingFactory().default()
                 
             default:
                 break

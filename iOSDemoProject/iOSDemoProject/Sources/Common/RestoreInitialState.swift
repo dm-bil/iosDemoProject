@@ -12,7 +12,8 @@ func restoreState() -> AppState {
     return AppState(
         auth: restore() ?? .initial,
         user: restore() ?? .initial,
-        emailAuthInput: nil
+        emailAuthInput: nil,
+        fasting: .initial
     )
 }
 

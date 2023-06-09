@@ -20,6 +20,23 @@ struct ListPresenter {
     func present(state: AppState) {
         render.perform(
             with: Props(
+                contentState: {
+                    switch state.fasting.content {
+                    case .idle, .loading:
+                        return .loading
+                    case .loaded(let items):
+                        return .loaded(
+                            items.map({ fasting in
+                                .init(
+                                    name: fasting.name,
+                                    durationHours: fasting.fastingHours + fasting.eatingHours,
+                                    onClick: dispatch.bind(to: Actions.ListPresenter.ShowFasting(id: fasting.id))
+                                )
+                            })
+                        )
+                    }
+                }(),
+                onAppeared: dispatch.bind(to: Actions.ListPresenter.Appeared()),
                 onDestroy: endObserving
             )
         )

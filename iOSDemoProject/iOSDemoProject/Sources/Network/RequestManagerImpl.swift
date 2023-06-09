@@ -39,6 +39,24 @@ final class RequestManagerImpl: RequestManager {
             }
         }
     }
+    
+    func v5FastingsGet() -> Request<[Fasting]> {
+        return Request<[Fasting]> { completion in
+            let task = Task {
+                try await Task.sleep(nanoseconds: UInt64(1 * 1_000_000_000))
+                
+                completion(.success([
+                    .init(id: UUID().uuidString, name: "Circadian Rhythm TRF", fastingHours: 4, eatingHours: 4, description: ""),
+                    .init(id: UUID().uuidString, name: "16:8 TRF", fastingHours: 16, eatingHours: 8, description: ""),
+                    .init(id: UUID().uuidString, name: "20:4 TRF", fastingHours: 20, eatingHours: 4, description: ""),
+                ]))
+            }
+            
+            return Command {
+                task.cancel()
+            }
+        }
+    }
 }
 
 private extension RequestManagerImpl {
