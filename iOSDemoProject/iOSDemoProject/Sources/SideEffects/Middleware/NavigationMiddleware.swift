@@ -8,7 +8,7 @@
 
 import ReduxCore
 import Foundation
-import BMCommand
+
 
 final class NavigationMiddleware {
     func middleware() -> Middleware<AppState> {

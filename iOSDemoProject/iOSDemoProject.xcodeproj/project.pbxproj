@@ -50,7 +50,6 @@
 		FEFADC792A29EBA600B295DF /* iOSDemoProjectUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEFADC782A29EBA600B295DF /* iOSDemoProjectUITestsLaunchTests.swift */; };
 		FEFADC8A2A2A051700B295DF /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEFADC892A2A051700B295DF /* main.swift */; };
 		FEFADC8E2A2A0A4A00B295DF /* ReduxCore in Frameworks */ = {isa = PBXBuildFile; productRef = FEFADC8D2A2A0A4A00B295DF /* ReduxCore */; };
-		FEFADC912A2A12E000B295DF /* BMCommand in Frameworks */ = {isa = PBXBuildFile; productRef = FEFADC902A2A12E000B295DF /* BMCommand */; };
 		FEFADC972A2A1E7000B295DF /* AuthState.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEFADC962A2A1E7000B295DF /* AuthState.swift */; };
 		FEFADC992A2A1F7900B295DF /* EmailAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEFADC982A2A1F7900B295DF /* EmailAccount.swift */; };
 		FEFADC9B2A2A1F8D00B295DF /* AuthTokenInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEFADC9A2A2A1F8D00B295DF /* AuthTokenInfo.swift */; };
@@ -63,7 +62,6 @@
 		FEFADCB02A2F5B9500B295DF /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEFADCAD2A2F5B9500B295DF /* LoginPresenter.swift */; };
 		FEFADCB12A2F5B9500B295DF /* LoginScreenFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEFADCAE2A2F5B9500B295DF /* LoginScreenFactory.swift */; };
 		FEFADCB22A2F5B9500B295DF /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEFADCAF2A2F5B9500B295DF /* LoginViewController.swift */; };
-		FEFADCB52A2F5CB700B295DF /* BMPreview in Frameworks */ = {isa = PBXBuildFile; productRef = FEFADCB42A2F5CB700B295DF /* BMPreview */; };
 		FEFADCB82A2F612400B295DF /* SnapKit-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = FEFADCB72A2F612400B295DF /* SnapKit-Dynamic */; };
 		FEFADCBC2A2F651B00B295DF /* ColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEFADCBB2A2F651B00B295DF /* ColorExtensions.swift */; };
 		FEFADCBF2A2F8FF200B295DF /* AppLaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEFADCBE2A2F8FF200B295DF /* AppLaunchViewController.swift */; };
@@ -85,6 +83,10 @@
 		FEFE80CD2A33879700D3AA4F /* FastingLoadingPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEFE80CC2A33879700D3AA4F /* FastingLoadingPresenter.swift */; };
 		FEFE80CF2A33888900D3AA4F /* FastingLoadingPresenterActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEFE80CE2A33888900D3AA4F /* FastingLoadingPresenterActions.swift */; };
 		FEFE80D12A33893B00D3AA4F /* FastingLoadingFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEFE80D02A33893B00D3AA4F /* FastingLoadingFactory.swift */; };
+		FEFE80D42A3885C900D3AA4F /* Command.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEFE80D32A3885C900D3AA4F /* Command.swift */; };
+		FEFE80D72A38863600D3AA4F /* PreviewDeviceModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEFE80D62A38863600D3AA4F /* PreviewDeviceModifier.swift */; };
+		FEFE80D92A38864B00D3AA4F /* UIViewControllerPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEFE80D82A38864B00D3AA4F /* UIViewControllerPreview.swift */; };
+		FEFE80DB2A38865A00D3AA4F /* UIViewPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEFE80DA2A38865A00D3AA4F /* UIViewPreview.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -183,6 +185,10 @@
 		FEFE80CC2A33879700D3AA4F /* FastingLoadingPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FastingLoadingPresenter.swift; sourceTree = "<group>"; };
 		FEFE80CE2A33888900D3AA4F /* FastingLoadingPresenterActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FastingLoadingPresenterActions.swift; sourceTree = "<group>"; };
 		FEFE80D02A33893B00D3AA4F /* FastingLoadingFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FastingLoadingFactory.swift; sourceTree = "<group>"; };
+		FEFE80D32A3885C900D3AA4F /* Command.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Command.swift; sourceTree = "<group>"; };
+		FEFE80D62A38863600D3AA4F /* PreviewDeviceModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewDeviceModifier.swift; sourceTree = "<group>"; };
+		FEFE80D82A38864B00D3AA4F /* UIViewControllerPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerPreview.swift; sourceTree = "<group>"; };
+		FEFE80DA2A38865A00D3AA4F /* UIViewPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewPreview.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -191,8 +197,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				FEFADC8E2A2A0A4A00B295DF /* ReduxCore in Frameworks */,
-				FEFADCB52A2F5CB700B295DF /* BMPreview in Frameworks */,
-				FEFADC912A2A12E000B295DF /* BMCommand in Frameworks */,
 				FEFADCB82A2F612400B295DF /* SnapKit-Dynamic in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -430,6 +434,8 @@
 		FEFADC8B2A2A06B300B295DF /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				FEFE80D52A38862700D3AA4F /* BMPreview */,
+				FEFE80D22A38850100D3AA4F /* BMCommand */,
 				FEF351822A30A19C00BD8320 /* Network */,
 				FEFADC922A2A1C7600B295DF /* Core */,
 				FEFADCA02A2A229C00B295DF /* Abstractions */,
@@ -674,6 +680,24 @@
 			path = FastingLoading;
 			sourceTree = "<group>";
 		};
+		FEFE80D22A38850100D3AA4F /* BMCommand */ = {
+			isa = PBXGroup;
+			children = (
+				FEFE80D32A3885C900D3AA4F /* Command.swift */,
+			);
+			path = BMCommand;
+			sourceTree = "<group>";
+		};
+		FEFE80D52A38862700D3AA4F /* BMPreview */ = {
+			isa = PBXGroup;
+			children = (
+				FEFE80D62A38863600D3AA4F /* PreviewDeviceModifier.swift */,
+				FEFE80D82A38864B00D3AA4F /* UIViewControllerPreview.swift */,
+				FEFE80DA2A38865A00D3AA4F /* UIViewPreview.swift */,
+			);
+			path = BMPreview;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -692,8 +716,6 @@
 			name = iOSDemoProject;
 			packageProductDependencies = (
 				FEFADC8D2A2A0A4A00B295DF /* ReduxCore */,
-				FEFADC902A2A12E000B295DF /* BMCommand */,
-				FEFADCB42A2F5CB700B295DF /* BMPreview */,
 				FEFADCB72A2F612400B295DF /* SnapKit-Dynamic */,
 			);
 			productName = iOSDemoProject;
@@ -771,8 +793,6 @@
 			mainGroup = FEFADC492A29EBA500B295DF;
 			packageReferences = (
 				FEFADC8C2A2A0A4A00B295DF /* XCRemoteSwiftPackageReference "ReduxCore" */,
-				FEFADC8F2A2A12E000B295DF /* XCRemoteSwiftPackageReference "ios-command" */,
-				FEFADCB32A2F5CB700B295DF /* XCRemoteSwiftPackageReference "BMPreview" */,
 				FEFADCB62A2F612400B295DF /* XCRemoteSwiftPackageReference "SnapKit" */,
 			);
 			productRefGroup = FEFADC532A29EBA500B295DF /* Products */;
@@ -824,6 +844,7 @@
 				FEF351952A30B46100BD8320 /* EmailSignInPresenterActions.swift in Sources */,
 				FEFADCC32A2F915500B295DF /* ApplicationActions.swift in Sources */,
 				FEFADCD32A2F9D4200B295DF /* CredentialsValidator.swift in Sources */,
+				FEFE80D92A38864B00D3AA4F /* UIViewControllerPreview.swift in Sources */,
 				FEFADCA82A2A3B7A00B295DF /* ChainCoordinator.swift in Sources */,
 				FE02FCB62A322F6A00C69C60 /* ActiveFastingPresenter.swift in Sources */,
 				FEF3517F2A309F4C00BD8320 /* EmailSignInController.swift in Sources */,
@@ -852,6 +873,7 @@
 				FEFADCB12A2F5B9500B295DF /* LoginScreenFactory.swift in Sources */,
 				FEFADC9F2A2A212B00B295DF /* AppState.swift in Sources */,
 				FEFE80CF2A33888900D3AA4F /* FastingLoadingPresenterActions.swift in Sources */,
+				FEFE80D72A38863600D3AA4F /* PreviewDeviceModifier.swift in Sources */,
 				FEFADC8A2A2A051700B295DF /* main.swift in Sources */,
 				FEFADCB02A2F5B9500B295DF /* LoginPresenter.swift in Sources */,
 				FEFADCD02A2F9BF300B295DF /* LoginPresenterActions.swift in Sources */,
@@ -860,6 +882,7 @@
 				FE02FCBB2A323AD900C69C60 /* MainCoordinatorActions.swift in Sources */,
 				FEFADCD72A2F9E4900B295DF /* CustomOperators.swift in Sources */,
 				FEFADCD52A2F9D9400B295DF /* EmailAuthInputState.swift in Sources */,
+				FEFE80DB2A38865A00D3AA4F /* UIViewPreview.swift in Sources */,
 				FEFADC992A2A1F7900B295DF /* EmailAccount.swift in Sources */,
 				FEFE80CB2A33839500D3AA4F /* FastingLoadingController.swift in Sources */,
 				FEFE80BE2A33651600D3AA4F /* UITableViewCellExtensions.swift in Sources */,
@@ -870,6 +893,7 @@
 				FEF3519E2A30D2EF00BD8320 /* LoaderViewController.swift in Sources */,
 				FEFE80BC2A3353EE00D3AA4F /* ListItemCell.swift in Sources */,
 				FE02FCB12A322ED200C69C60 /* FastingCoordinator.swift in Sources */,
+				FEFE80D42A3885C900D3AA4F /* Command.swift in Sources */,
 				FEFADC9B2A2A1F8D00B295DF /* AuthTokenInfo.swift in Sources */,
 				FEFADCCB2A2F926800B295DF /* NavigationMiddlewareActions.swift in Sources */,
 				FEF3519B2A30CCD800BD8320 /* MainCoordinator.swift in Sources */,
@@ -1242,22 +1266,6 @@
 				version = 2.0.0;
 			};
 		};
-		FEFADC8F2A2A12E000B295DF /* XCRemoteSwiftPackageReference "ios-command" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "git@github.com:betterme-dev/ios-command.git";
-			requirement = {
-				kind = exactVersion;
-				version = 1.0.1;
-			};
-		};
-		FEFADCB32A2F5CB700B295DF /* XCRemoteSwiftPackageReference "BMPreview" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "git@github.com:betterme-dev/BMPreview.git";
-			requirement = {
-				kind = exactVersion;
-				version = 1.0.2;
-			};
-		};
 		FEFADCB62A2F612400B295DF /* XCRemoteSwiftPackageReference "SnapKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "git@github.com:SnapKit/SnapKit.git";
@@ -1273,16 +1281,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = FEFADC8C2A2A0A4A00B295DF /* XCRemoteSwiftPackageReference "ReduxCore" */;
 			productName = ReduxCore;
-		};
-		FEFADC902A2A12E000B295DF /* BMCommand */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = FEFADC8F2A2A12E000B295DF /* XCRemoteSwiftPackageReference "ios-command" */;
-			productName = BMCommand;
-		};
-		FEFADCB42A2F5CB700B295DF /* BMPreview */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = FEFADCB32A2F5CB700B295DF /* XCRemoteSwiftPackageReference "BMPreview" */;
-			productName = BMPreview;
 		};
 		FEFADCB72A2F612400B295DF /* SnapKit-Dynamic */ = {
 			isa = XCSwiftPackageProductDependency;

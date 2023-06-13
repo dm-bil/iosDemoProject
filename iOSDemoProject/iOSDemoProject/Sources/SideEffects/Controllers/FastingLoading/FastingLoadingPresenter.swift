@@ -7,7 +7,7 @@
 //
 
 import ReduxCore
-import BMCommand
+
 import Foundation
 
 struct FastingLoadingPresenter {

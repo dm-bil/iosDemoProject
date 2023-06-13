@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import BMCommand
+
 import ReduxCore
 
 struct EmailSignInFactory {

@@ -7,7 +7,7 @@
 //
 
 import Foundation
-import BMCommand
+
 
 struct Request<T> {
     /// Returns a Command to cancel request

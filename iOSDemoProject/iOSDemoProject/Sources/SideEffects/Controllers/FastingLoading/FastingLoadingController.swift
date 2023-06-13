@@ -6,7 +6,7 @@
 //  Copyright © 2023 BetterMe. All rights reserved.
 //
 
-import BMCommand
+
 import Foundation
 
 public final class FastingLoadingController: NSObject {

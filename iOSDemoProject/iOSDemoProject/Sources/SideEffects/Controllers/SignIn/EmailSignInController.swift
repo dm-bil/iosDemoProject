@@ -6,7 +6,7 @@
 //  Copyright © 2020 BetterMe. All rights reserved.
 //
 
-import BMCommand
+
 import Foundation
 
 enum EmailSignInError: CustomNSError {

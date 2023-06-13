@@ -7,10 +7,9 @@
 //
 
 import UIKit
-import BMCommand
+
 #if DEBUG
 import SwiftUI
-import BMPreview
 #endif
 
 final class ListViewController: UIViewController {

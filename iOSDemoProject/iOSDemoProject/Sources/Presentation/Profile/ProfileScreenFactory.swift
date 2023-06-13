@@ -8,7 +8,7 @@
 
 import UIKit
 import ReduxCore
-import BMCommand
+
 
 struct ProfileScreenFactory {
     private let store: Store<AppState>

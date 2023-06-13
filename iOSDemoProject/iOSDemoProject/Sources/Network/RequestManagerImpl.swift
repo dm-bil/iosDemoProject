@@ -7,7 +7,7 @@
 //
 
 import Foundation
-import BMCommand
+
 
 final class RequestManagerImpl: RequestManager {
     func v5EmailSingInPost(email: String, password: String) -> Request<EmailSignInResponse> {

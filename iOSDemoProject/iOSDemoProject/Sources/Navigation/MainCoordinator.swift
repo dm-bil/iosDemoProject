@@ -8,7 +8,7 @@
 
 import UIKit
 import ReduxCore
-import BMCommand
+
 
 final class MainCoordinator: NSObject, ChainCoordinator {
     var rootViewController: UIViewController {
