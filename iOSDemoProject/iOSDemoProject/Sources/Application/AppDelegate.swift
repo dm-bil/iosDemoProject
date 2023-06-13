@@ -28,6 +28,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             state: restoreState(),
             reducer: reduce,
             middlewares: [
+                LoggerMiddleware().middleware(),
                 SideEffectsMiddleware().middleware(),
                 CoordinatorMiddleware(handler: coordinator.handle).middleware(),
                 NavigationMiddleware().middleware(),

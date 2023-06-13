@@ -87,6 +87,7 @@
 		FEFE80D72A38863600D3AA4F /* PreviewDeviceModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEFE80D62A38863600D3AA4F /* PreviewDeviceModifier.swift */; };
 		FEFE80D92A38864B00D3AA4F /* UIViewControllerPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEFE80D82A38864B00D3AA4F /* UIViewControllerPreview.swift */; };
 		FEFE80DB2A38865A00D3AA4F /* UIViewPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEFE80DA2A38865A00D3AA4F /* UIViewPreview.swift */; };
+		FEFE80E42A38D5E300D3AA4F /* LoggerMiddleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEFE80E32A38D5E300D3AA4F /* LoggerMiddleware.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -189,6 +190,7 @@
 		FEFE80D62A38863600D3AA4F /* PreviewDeviceModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewDeviceModifier.swift; sourceTree = "<group>"; };
 		FEFE80D82A38864B00D3AA4F /* UIViewControllerPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerPreview.swift; sourceTree = "<group>"; };
 		FEFE80DA2A38865A00D3AA4F /* UIViewPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewPreview.swift; sourceTree = "<group>"; };
+		FEFE80E32A38D5E300D3AA4F /* LoggerMiddleware.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggerMiddleware.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -606,6 +608,7 @@
 				FEFADCCC2A2F944B00B295DF /* CoordinatorMiddleware.swift */,
 				FEFADCC62A2F920A00B295DF /* NavigationMiddleware.swift */,
 				FEF351982A30BDEA00BD8320 /* SideEffectsMiddleware.swift */,
+				FEFE80E32A38D5E300D3AA4F /* LoggerMiddleware.swift */,
 			);
 			path = Middleware;
 			sourceTree = "<group>";
@@ -847,6 +850,7 @@
 				FEFE80D92A38864B00D3AA4F /* UIViewControllerPreview.swift in Sources */,
 				FEFADCA82A2A3B7A00B295DF /* ChainCoordinator.swift in Sources */,
 				FE02FCB62A322F6A00C69C60 /* ActiveFastingPresenter.swift in Sources */,
+				FEFE80E42A38D5E300D3AA4F /* LoggerMiddleware.swift in Sources */,
 				FEF3517F2A309F4C00BD8320 /* EmailSignInController.swift in Sources */,
 				FEFADC562A29EBA500B295DF /* AppDelegate.swift in Sources */,
 				FEF3518B2A30A74B00BD8320 /* AuthTokenInfoResponse.swift in Sources */,
