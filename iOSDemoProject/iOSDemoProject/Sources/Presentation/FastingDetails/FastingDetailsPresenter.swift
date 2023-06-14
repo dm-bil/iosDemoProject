@@ -7,7 +7,7 @@
 //
 
 import Foundation
-import BMAbstractions
+import ReduxCore
 
 struct FastingDetailsPresenter {
     private typealias Props = FastingDetailsViewController.Props
@@ -16,7 +16,7 @@ struct FastingDetailsPresenter {
     let dispatch: CommandWith<Action>
     let endObserving: Command
     
-    func present(state: State) {
+    func present(state: AppState) {
         render.perform(
             with: Props(
                 onDestroy: endObserving

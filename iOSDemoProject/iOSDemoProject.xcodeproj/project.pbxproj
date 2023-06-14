@@ -87,6 +87,9 @@
 		FEFE80D72A38863600D3AA4F /* PreviewDeviceModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEFE80D62A38863600D3AA4F /* PreviewDeviceModifier.swift */; };
 		FEFE80D92A38864B00D3AA4F /* UIViewControllerPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEFE80D82A38864B00D3AA4F /* UIViewControllerPreview.swift */; };
 		FEFE80DB2A38865A00D3AA4F /* UIViewPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEFE80DA2A38865A00D3AA4F /* UIViewPreview.swift */; };
+		FEFE80E02A38C70100D3AA4F /* FastingDetailsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEFE80DD2A38C70100D3AA4F /* FastingDetailsPresenter.swift */; };
+		FEFE80E12A38C70100D3AA4F /* FastingDetailsScreenFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEFE80DE2A38C70100D3AA4F /* FastingDetailsScreenFactory.swift */; };
+		FEFE80E22A38C70100D3AA4F /* FastingDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEFE80DF2A38C70100D3AA4F /* FastingDetailsViewController.swift */; };
 		FEFE80E42A38D5E300D3AA4F /* LoggerMiddleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEFE80E32A38D5E300D3AA4F /* LoggerMiddleware.swift */; };
 /* End PBXBuildFile section */
 
@@ -190,6 +193,9 @@
 		FEFE80D62A38863600D3AA4F /* PreviewDeviceModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewDeviceModifier.swift; sourceTree = "<group>"; };
 		FEFE80D82A38864B00D3AA4F /* UIViewControllerPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerPreview.swift; sourceTree = "<group>"; };
 		FEFE80DA2A38865A00D3AA4F /* UIViewPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewPreview.swift; sourceTree = "<group>"; };
+		FEFE80DD2A38C70100D3AA4F /* FastingDetailsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FastingDetailsPresenter.swift; sourceTree = "<group>"; };
+		FEFE80DE2A38C70100D3AA4F /* FastingDetailsScreenFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FastingDetailsScreenFactory.swift; sourceTree = "<group>"; };
+		FEFE80DF2A38C70100D3AA4F /* FastingDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FastingDetailsViewController.swift; sourceTree = "<group>"; };
 		FEFE80E32A38D5E300D3AA4F /* LoggerMiddleware.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggerMiddleware.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -525,6 +531,7 @@
 		FEFADCAB2A2F59A700B295DF /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				FEFE80DC2A38C65800D3AA4F /* FastingDetails */,
 				FEFADCB92A2F64EF00B295DF /* Common */,
 				FEFADCBD2A2F8FD800B295DF /* AppLaunch */,
 				FEFADCAC2A2F59BA00B295DF /* Login */,
@@ -701,6 +708,16 @@
 			path = BMPreview;
 			sourceTree = "<group>";
 		};
+		FEFE80DC2A38C65800D3AA4F /* FastingDetails */ = {
+			isa = PBXGroup;
+			children = (
+				FEFE80DD2A38C70100D3AA4F /* FastingDetailsPresenter.swift */,
+				FEFE80DE2A38C70100D3AA4F /* FastingDetailsScreenFactory.swift */,
+				FEFE80DF2A38C70100D3AA4F /* FastingDetailsViewController.swift */,
+			);
+			path = FastingDetails;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -873,6 +890,7 @@
 				FEF351992A30BDEA00BD8320 /* SideEffectsMiddleware.swift in Sources */,
 				FEF351842A30A1B000BD8320 /* RequestManager.swift in Sources */,
 				FEF351AF2A30E2C800BD8320 /* ListScreenFactory.swift in Sources */,
+				FEFE80E02A38C70100D3AA4F /* FastingDetailsPresenter.swift in Sources */,
 				FEFE80C02A336B9E00D3AA4F /* CollectionExtensions.swift in Sources */,
 				FEFADCB12A2F5B9500B295DF /* LoginScreenFactory.swift in Sources */,
 				FEFADC9F2A2A212B00B295DF /* AppState.swift in Sources */,
@@ -898,8 +916,10 @@
 				FEFE80BC2A3353EE00D3AA4F /* ListItemCell.swift in Sources */,
 				FE02FCB12A322ED200C69C60 /* FastingCoordinator.swift in Sources */,
 				FEFE80D42A3885C900D3AA4F /* Command.swift in Sources */,
+				FEFE80E22A38C70100D3AA4F /* FastingDetailsViewController.swift in Sources */,
 				FEFADC9B2A2A1F8D00B295DF /* AuthTokenInfo.swift in Sources */,
 				FEFADCCB2A2F926800B295DF /* NavigationMiddlewareActions.swift in Sources */,
+				FEFE80E12A38C70100D3AA4F /* FastingDetailsScreenFactory.swift in Sources */,
 				FEF3519B2A30CCD800BD8320 /* MainCoordinator.swift in Sources */,
 				FEFE80C52A337D0600D3AA4F /* Fasting.swift in Sources */,
 				FEFADCBC2A2F651B00B295DF /* ColorExtensions.swift in Sources */,

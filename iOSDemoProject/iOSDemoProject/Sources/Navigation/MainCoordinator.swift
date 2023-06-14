@@ -47,17 +47,14 @@ final class MainCoordinator: NSObject, ChainCoordinator {
         switch action {
         case is Actions.MainCoordinator.ShowList:
             tabBarViewController.selectedIndex = 0
-            next = listCoordinator
             return true
             
         case is Actions.MainCoordinator.ShowFasting:
             tabBarViewController.selectedIndex = 1
-            next = fastingCoordinator
             return true
             
         case is Actions.MainCoordinator.ShowProfile:
             tabBarViewController.selectedIndex = 2
-            next = profileCoordinator
             return true
             
         default:

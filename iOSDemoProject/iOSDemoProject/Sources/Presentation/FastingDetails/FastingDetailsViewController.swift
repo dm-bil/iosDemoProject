@@ -7,10 +7,8 @@
 //
 
 import UIKit
-import BMAbstractions
 #if DEBUG
 import SwiftUI
-import BMPreview
 #endif
 
 final class FastingDetailsViewController: UIViewController {

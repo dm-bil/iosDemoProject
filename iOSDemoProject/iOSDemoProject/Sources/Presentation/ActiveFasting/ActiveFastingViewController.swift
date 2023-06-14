@@ -25,6 +25,8 @@ final class ActiveFastingViewController: UIViewController {
     private var didDisappearObservers: [() -> Void] = []
     private var props = Props.initial
     
+    private let emptyLabel = UILabel()
+    
     deinit {
         props.onDestroy.perform()
     }
@@ -84,9 +86,18 @@ private extension ActiveFastingViewController {
     
     func configureUI() {
         view.backgroundColor = .white
+        
+        emptyLabel.text = "Fasting is not selected"
+        emptyLabel.font = UIFont.systemFont(ofSize: 16, weight: .semibold)
+        emptyLabel.textColor = UIColor(hexString: "#8E8E93")
     }
     
-    func configureLayout() {}
+    func configureLayout() {
+        view.addSubview(emptyLabel)
+        emptyLabel.snp.makeConstraints { make in
+            make.center.equalToSuperview()
+        }
+    }
 }
 
 #if DEBUG
