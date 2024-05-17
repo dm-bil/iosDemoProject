@@ -1,0 +1,27 @@
+name: Analyze code
+
+on: workflow_dispatch
+
+jobs:
+  build:
+    name: Build and analyze
+    runs-on: ubuntu-latest
+    
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: "Swift static analysis"
+        uses: MobSF/mobsfscan@main
+        with:
+          args: '. --type ios --sarif --output mobsfscan-results.sarif'
+      - uses: sonarsource/sonarqube-scan-action@master
+        name: "SonarQube scan"
+        env:
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+          SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
+        with:
+          args: >
+            -Dsonar.projectKey=sonar.projectKey=dm-bil_iosDemoProject_68e9fdd5-fe18-41ef-b2cf-37e3c809fad5
+            -Dsonar.sarifReportPaths=mobsfscan-results.sarif
+      
