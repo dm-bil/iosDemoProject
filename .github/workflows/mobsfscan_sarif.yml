@@ -1,0 +1,16 @@
+name: mobsfscan sarif
+on: workflow_dispatch
+
+jobs:
+  mobsfscan:
+    runs-on: ubuntu-latest
+    name: mobsfscan code scanning
+    steps:
+    - name: Checkout the code
+      uses: actions/checkout@v2
+    - name: mobsfscan
+      uses: MobSF/mobsfscan@main
+      with:
+        args: '. --type ios --sarif --output mobsfscan-results.sarif'
+    - run: cat mobsfscan-results.sarif
+      
