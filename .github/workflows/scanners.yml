@@ -22,6 +22,6 @@ jobs:
           SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
         with:
           args: >
-            -Dsonar.projectKey=sonar.projectKey=dm-bil_iosDemoProject_68e9fdd5-fe18-41ef-b2cf-37e3c809fad5
+            -Dsonar.projectKey=dm-bil_iosDemoProject_68e9fdd5-fe18-41ef-b2cf-37e3c809fad5
             -Dsonar.sarifReportPaths=mobsfscan-results.sarif
       
